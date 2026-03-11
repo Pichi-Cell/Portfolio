@@ -1,0 +1,119 @@
+{
+    "profile": {
+        "name": "Lucas Picchi",
+        "title": "Tech Lead and Fullstack Developer",
+        "bio": "Specializing in industrial automation, IoT telemetry, and high-performance backend architecture.",
+        "email": "picchilucas7@gmail.com",
+        "resumeUrl": "/lucas-picchi-resume.pdf"
+    },
+    "skills": {
+        "Backend Architecture": [
+            "Node.js & Go",
+            "PostgreSQL & Redis",
+            "Distributed Systems",
+            "API Optimization",
+            "Real-time Data Ingestion"
+        ],
+        "Industrial Tech & IoT": [
+            "Industrial Telemetry",
+            "Monitoring Platforms",
+            "Automated QA Systems",
+            "Sensor Data Processing",
+            "Industrial Connectivity"
+        ],
+        "Infrastructure & DevOps": [
+            "Docker & Docker Compose",
+            "VPS Deployment",
+            "CI/CD Pipelines",
+            "Nginx Configuration",
+            "System Monitoring"
+        ],
+        "Leadership": [
+            "Technical Team Management",
+            "Developer Mentorship",
+            "System Design Architecture",
+            "Technical Selection & Hiring",
+            "Project Scoping & Roadmap"
+        ]
+    },
+    "projects": [
+        {
+            "title": "Industrial Telemetry Platform",
+            "description": "Real-time monitoring system for industrial compressors, featuring high-frequency data ingestion and live performance visualization.",
+            "video": "https://assets.mixkit.co/videos/preview/mixkit-circuit-board-close-up-1563-large.mp4",
+            "tags": [
+                "Node.js",
+                "Redis",
+                "PostgreSQL",
+                "Docker"
+            ],
+            "links": {
+                "github": "https://github.com/lpicchi/telemetry-system",
+                "live": "https://telemetry.example.com"
+            }
+        },
+        {
+            "title": "Automated QA Engine",
+            "description": "Distributed quality assurance framework for industrial production lines, automating testing flows to eliminate human error.",
+            "video": "https://assets.mixkit.co/videos/preview/mixkit-digital-animation-of-data-processing-4328-large.mp4",
+            "tags": [
+                "Backend",
+                "Automation",
+                "Industrial IoT",
+                "PostgreSQL"
+            ],
+            "links": {
+                "github": "https://github.com/lpicchi/qa-automation-engine"
+            }
+        },
+        {
+            "title": "Glass-Aero Portfolio",
+            "description": "A high-performance personal webpage featuring a custom WebGL landing and Xbox 360-inspired glassmorphic design system.",
+            "video": "https://assets.mixkit.co/videos/preview/mixkit-abstract-glass-structure-glittering-in-the-sun-44185-large.mp4",
+            "tags": [
+                "React",
+                "Three.js",
+                "Tailwind",
+                "Framer Motion"
+            ],
+            "links": {
+                "github": "https://github.com/lpicchi/portfolio-2026",
+                "live": "https://lucaspicchi.dev"
+            }
+        }
+    ],
+    "experience": [
+        {
+            "role": "Head of Development / Tech Lead",
+            "company": "Industrial Systems Corp",
+            "period": "Feb 2025 — Present",
+            "bullets": [
+                "Architected the backend for a real-time telemetry platform for industrial compressor systems.",
+                "Leading and mentoring a technical team of three developers on software best practices and scalable architecture.",
+                "Optimizing industrial data ingestion pipelines using Redis and PostgreSQL for high-frequency monitoring.",
+                "Managing full-lifecycle deployments on VPS environments using Docker and Docker Compose."
+            ]
+        },
+        {
+            "role": "Software Engineer & Lead Developer",
+            "company": "Automation Labs",
+            "period": "Jan 2024 — Jan 2025",
+            "bullets": [
+                "Developed an automated QA system for production lines, reducing testing time and human error by 70%.",
+                "Designed and implemented high-performance backend services for industrial data processing.",
+                "Engineered responsive real-time dashboards to visualize complex industrial telemetry metrics.",
+                "Led technical selection processes to scale the engineering team with qualified talent."
+            ]
+        },
+        {
+            "role": "Fullstack Developer",
+            "company": "Tech Solutions",
+            "period": "Mar 2022 — Dec 2023",
+            "bullets": [
+                "Built and maintained scalable web applications using Node.js and React.",
+                "Improved database performance through advanced indexing and query optimization strategies.",
+                "Established the company's first CI/CD pipeline for automated testing and deployment."
+            ]
+        }
+    ]
+}
