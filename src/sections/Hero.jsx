@@ -23,7 +23,7 @@ const Hero = ({ data }) => {
                     <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                         I'm <span className="text-white">{data.name}</span>
                         <br />
-                        <span className="bg-gradient-to-r from-emerald-400 via-teal-400 to-emerald-500 bg-clip-text text-transparent">
+                        <span className=" text-emerald-400  bg-clip-text">
                             {data.title}
                         </span>
                     </h1>
@@ -33,14 +33,6 @@ const Hero = ({ data }) => {
                     </p>
 
                     <div className="flex flex-wrap gap-4">
-                        <Button className="flex items-center gap-2 group">
-                            Blog
-                            <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
-                        </Button>
-                        <Button variant="secondary" className="flex items-center gap-2">
-                            <Download size={18} />
-                            Resume
-                        </Button>
                     </div>
                 </motion.div>
 

@@ -23,10 +23,11 @@ const Portfolio = ({ projects }) => {
                                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                 muted
                                 loop
+                                playsInline
                                 onMouseEnter={(e) => e.target.play()}
                                 onMouseLeave={(e) => { e.target.pause(); e.target.currentTime = 0; }}
                             />
-                            <div className="absolute inset-0 bg-slate-900/40 flex items-center justify-center opacity-100 group-hover:opacity-0 transition-opacity">
+                            <div className="absolute inset-0 bg-slate-900/40 flex items-center justify-center opacity-100 group-hover:opacity-0 transition-opacity pointer-events-none">
                                 <Play className="text-white fill-white opacity-50" size={48} />
                             </div>
                         </div>
@@ -40,17 +41,17 @@ const Portfolio = ({ projects }) => {
                             <h3 className="text-2xl font-bold text-white mb-3">{project.title}</h3>
                             <p className="text-slate-400 mb-6">{project.description}</p>
 
-                            <div className="flex gap-4">
-                                <a href={project.links.github} className="flex-1">
+                            <div className="flex gap-4 content-end">
+                                {project.links.github && <a href={project.links.github} className="flex-1">
                                     <Button variant="secondary" className="w-full flex items-center justify-center gap-2">
                                         <Github size={18} /> GitHub
                                     </Button>
-                                </a>
-                                <a href={project.links.live} className="flex-1">
+                                </a>}
+                                {project.links.live && <a href={project.links.live} className="flex-1">
                                     <Button variant="primary" className="w-full flex items-center justify-center gap-2">
-                                        <ExternalLink size={18} /> Demo
+                                        <ExternalLink size={18} /> Book a Demo
                                     </Button>
-                                </a>
+                                </a>}
                             </div>
                         </div>
                     </GlassCard>

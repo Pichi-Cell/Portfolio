@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from './sections/Hero';
+import About from './sections/About';
 import Portfolio from './sections/Portfolio';
 import SkillsMatrix from './sections/SkillsMatrix';
 import Experience from './sections/Experience';
@@ -21,6 +22,7 @@ const App = () => {
 
             <main>
                 <Hero data={content.profile} />
+                <About data={content.about} resumeUrl={content.profile.resumeUrl} />
                 <Portfolio projects={content.projects} />
                 <SkillsMatrix skills={content.skills} />
                 <Experience experience={content.experience} />

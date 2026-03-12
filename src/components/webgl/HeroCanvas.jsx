@@ -1,12 +1,19 @@
-import React, { useRef, Suspense } from 'react';
+import React, { useRef, Suspense, useState, useEffect } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Float, useGLTF, Center, Environment, ContactShadows } from '@react-three/drei';
 import { EffectComposer, Pixelation } from '@react-three/postprocessing';
+import * as THREE from 'three';
 
 const Model = () => {
-    // Model moved to public/models for consistent Vite serving
     const groupRef = useRef();
     const { scene } = useGLTF('/models/niknet_art-crt-2749.glb');
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth < 768);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     // Ensure all materials are visible and set up correctly for the light
     scene.traverse((child) => {
@@ -20,21 +27,55 @@ const Model = () => {
         }
     });
 
+    const mouse = useRef({ x: 0, y: 0 });
+
+    useEffect(() => {
+        const handleMouseMove = (event) => {
+            // Normalize to [-1, 1]
+            mouse.current.x = (event.clientX / window.innerWidth) * 2 - 1;
+            mouse.current.y = -(event.clientY / window.innerHeight) * 2 + 1;
+        };
+        window.addEventListener('mousemove', handleMouseMove);
+        return () => window.removeEventListener('mousemove', handleMouseMove);
+    }, []);
+
     useFrame((state) => {
-        const t = state.clock.getElapsedTime();
         if (groupRef.current) {
-            groupRef.current.rotation.y = Math.sin(t / 4) * 0.3;
-            groupRef.current.rotation.x = Math.cos(t / 8) * 0.1;
+            if (isMobile) {
+                // Clear mouse rotation and rotate automatically on mobile
+                groupRef.current.rotation.y += 0.005;
+                groupRef.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.5) * 0.1;
+            } else {
+                const targetRotationY = mouse.current.x;
+                const targetRotationX = -mouse.current.y;
+
+                groupRef.current.rotation.y = THREE.MathUtils.lerp(
+                    groupRef.current.rotation.y,
+                    targetRotationY,
+                    0.05
+                );
+                groupRef.current.rotation.x = THREE.MathUtils.lerp(
+                    groupRef.current.rotation.x,
+                    targetRotationX,
+                    0.05
+                );
+            }
         }
     });
 
     return (
-        <primitive
-            ref={groupRef}
-            object={scene}
-            scale={3.8}
-            position={[5, 1, 1]}
-        />
+        <Float
+            speed={2}
+            rotationIntensity={isMobile ? 0.2 : 0}
+            floatIntensity={isMobile ? 1 : 0.5}
+        >
+            <primitive
+                ref={groupRef}
+                object={scene}
+                scale={isMobile ? 3.5 : 4.8}
+                position={isMobile ? [0, 0, 0] : [3, -0.5, 0]}
+            />
+        </Float>
     );
 };
 
@@ -55,23 +96,9 @@ const HeroCanvas = () => {
                 <Suspense fallback={null}>
                     {/* Environment provides the necessary reflections for PBR materials */}
                     <Environment preset="city" />
-
-                    <Float speed={2} rotationIntensity={5} floatIntensity={5}>
-                        <Center>
-                            <Model />
-                        </Center>
-                    </Float>
-
-                    <ContactShadows
-                        position={[0, -2.5, 0]}
-                        opacity={0.4}
-                        scale={20}
-                        blur={2.5}
-                        far={4.5}
-                    />
-
+                    <Model />
                     <EffectComposer disableNormalPass>
-                        <Pixelation granularity={3} />
+                        <Pixelation granularity={5} />
                     </EffectComposer>
                 </Suspense>
             </Canvas>

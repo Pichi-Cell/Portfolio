@@ -2,15 +2,35 @@
     "profile": {
         "name": "Lucas Picchi",
         "title": "Tech Lead and Fullstack Developer",
-        "bio": "Specializing in industrial automation, IoT telemetry, and high-performance backend architecture.",
+        "bio": "Tech Lead and full-stack developer currently building industrial software, from embedded telemetry systems to scalable backend infrastructure.",
         "email": "picchilucas7@gmail.com",
         "resumeUrl": "/lucas-picchi-resume.pdf"
     },
+    "about": {
+        "description": "Hi, I'm Lucas — an electronics engineering student and full-stack developer focused on industrial technology. I currently work as a Lead Developer at a cross-industry manufacturing company specializing in air compressor systems, where I design and build production-critical software that connects industrial hardware with modern data infrastructure. My work spans the full stack of industrial software: from embedded data acquisition and telemetry systems to backend services and real-time monitoring platforms. I focus on building reliable systems that handle large volumes of sensor data, automate production workflows, and provide actionable insights through analytics and visualization.",
+        "stats": [
+            {
+                "label": "Years of professional Experience",
+                "value": "3+"
+            },
+            {
+                "label": "Years Coding",
+                "value": "6+"
+            }
+        ],
+        "interests": [
+            "IoT",
+            "Full-Stack",
+            "Linux",
+            "DevOps",
+            "Telemetry",
+            "System Design"
+        ]
+    },
     "skills": {
         "Backend Architecture": [
-            "Node.js & Go",
+            "Node.js ",
             "PostgreSQL & Redis",
-            "Distributed Systems",
             "API Optimization",
             "Real-time Data Ingestion"
         ],
@@ -18,15 +38,13 @@
             "Industrial Telemetry",
             "Monitoring Platforms",
             "Automated QA Systems",
-            "Sensor Data Processing",
-            "Industrial Connectivity"
+            "Sensor Data Processing"
         ],
         "Infrastructure & DevOps": [
             "Docker & Docker Compose",
             "VPS Deployment",
             "CI/CD Pipelines",
-            "Nginx Configuration",
-            "System Monitoring"
+            "Nginx"
         ],
         "Leadership": [
             "Technical Team Management",
@@ -38,9 +56,24 @@
     },
     "projects": [
         {
+            "title": "Kanban VFD Repair shop CRM",
+            "description": "CRM for a repair shop, with a kanban board to handle issues, integration with legacy SMB and MAIL servers, docker-compose deployment and easy setup via a WEB GUI",
+            "video": "/crm_video.mkv",
+            "tags": [
+                "Full-Stack",
+                "Docker",
+                "B2B",
+                "PostgreSQL"
+            ],
+            "links": {
+                "github": "https://github.com/Pichi-Cell/VFD-Management",
+                "live": "#contact"
+            }
+        },
+        {
             "title": "Industrial Telemetry Platform",
             "description": "Real-time monitoring system for industrial compressors, featuring high-frequency data ingestion and live performance visualization.",
-            "video": "https://assets.mixkit.co/videos/preview/mixkit-circuit-board-close-up-1563-large.mp4",
+            "video": "/telemetry_video.mkv",
             "tags": [
                 "Node.js",
                 "Redis",
@@ -48,61 +81,32 @@
                 "Docker"
             ],
             "links": {
-                "github": "https://github.com/lpicchi/telemetry-system",
-                "live": "https://telemetry.example.com"
-            }
-        },
-        {
-            "title": "Automated QA Engine",
-            "description": "Distributed quality assurance framework for industrial production lines, automating testing flows to eliminate human error.",
-            "video": "https://assets.mixkit.co/videos/preview/mixkit-digital-animation-of-data-processing-4328-large.mp4",
-            "tags": [
-                "Backend",
-                "Automation",
-                "Industrial IoT",
-                "PostgreSQL"
-            ],
-            "links": {
-                "github": "https://github.com/lpicchi/qa-automation-engine"
-            }
-        },
-        {
-            "title": "Glass-Aero Portfolio",
-            "description": "A high-performance personal webpage featuring a custom WebGL landing and Xbox 360-inspired glassmorphic design system.",
-            "video": "https://assets.mixkit.co/videos/preview/mixkit-abstract-glass-structure-glittering-in-the-sun-44185-large.mp4",
-            "tags": [
-                "React",
-                "Three.js",
-                "Tailwind",
-                "Framer Motion"
-            ],
-            "links": {
-                "github": "https://github.com/lpicchi/portfolio-2026",
-                "live": "https://lucaspicchi.dev"
+                "live": "#contact"
             }
         }
     ],
     "experience": [
         {
-            "role": "Head of Development / Tech Lead",
-            "company": "Industrial Systems Corp",
+            "role": "Lead Developer",
+            "company": "DMD COMPRESORES SAIC",
             "period": "Feb 2025 — Present",
             "bullets": [
-                "Architected the backend for a real-time telemetry platform for industrial compressor systems.",
+                "Architected a real-time telemetry platform for industrial compressor systems.",
                 "Leading and mentoring a technical team of three developers on software best practices and scalable architecture.",
-                "Optimizing industrial data ingestion pipelines using Redis and PostgreSQL for high-frequency monitoring.",
-                "Managing full-lifecycle deployments on VPS environments using Docker and Docker Compose."
+                "Optimizing industrial data ingestion pipelines using Redis and PostgreSQL.",
+                "Managing full-lifecycle deployments on VPS environments using Docker and GitLab CI/CD."
             ]
         },
         {
-            "role": "Software Engineer & Lead Developer",
-            "company": "Automation Labs",
+            "role": "Fullstack Developer / Embedded Systems / DevOps",
+            "company": "DMD COMPRESORES SAIC",
             "period": "Jan 2024 — Jan 2025",
             "bullets": [
-                "Developed an automated QA system for production lines, reducing testing time and human error by 70%.",
-                "Designed and implemented high-performance backend services for industrial data processing.",
+                "Developed an automated QA system for production lines",
+                "Designed and implemented backend services for industrial data processing.",
                 "Engineered responsive real-time dashboards to visualize complex industrial telemetry metrics.",
-                "Led technical selection processes to scale the engineering team with qualified talent."
+                "Developed embedded data acquisition systems for industrial compressors.",
+                "Built CI/CD pipelines for automated testing and deployment."
             ]
         },
         {
