@@ -4,7 +4,7 @@ import GlassCard from '../components/ui/GlassCard';
 import Button from '../components/ui/Button';
 import { Download, FileText } from 'lucide-react';
 
-const About = ({ data, resumeUrl }) => {
+const About = ({ data, resumeUrl, ui }) => {
     if (!data) return null;
 
     const { description, stats } = data;
@@ -22,7 +22,7 @@ const About = ({ data, resumeUrl }) => {
                     className="lg:col-span-7"
                 >
                     <h2 className="text-4xl font-bold text-white mb-6">
-                        About <span className="text-emerald-500">Me</span>
+                        {ui.heading} <span className="text-emerald-500">{ui.headingAccent}</span>
                     </h2>
                     <p className="text-lg text-slate-300 leading-relaxed mb-8">
                         {description}
@@ -61,8 +61,8 @@ const About = ({ data, resumeUrl }) => {
                                     <FileText size={24} />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-white">Curriculum Vitae</h3>
-                                    <p className="text-slate-400 text-sm">Download my full professional history</p>
+                                    <h3 className="text-xl font-bold text-white">{ui.cvTitle}</h3>
+                                    <p className="text-slate-400 text-sm">{ui.cvSubtitle}</p>
                                 </div>
                             </div>
 
@@ -72,7 +72,7 @@ const About = ({ data, resumeUrl }) => {
                                 className="w-full"
                             >
                                 <Button className="w-full flex items-center justify-center gap-2 group/btn">
-                                    Download Resume
+                                    {ui.cvButton}
                                     <Download size={18} className="group-hover/btn:translate-y-0.5 transition-transform" />
                                 </Button>
                             </a>

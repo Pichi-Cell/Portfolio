@@ -1,128 +1,327 @@
 {
-    "profile": {
-        "name": "Lucas Picchi",
-        "title": "Fullstack Engineer",
-        "bio": "Full-stack engineer building industrial IoT and telemetry platforms that connect embedded systems with scalable backend infrastructure. I design systems that ingest high-frequency sensor data, automate production workflows, and power real-time monitoring platforms used in manufacturing environments.",
-        "email": "picchilucas7@gmail.com",
-        "resumeUrl": "/lucas-picchi-resume.pdf"
-    },
-    "about": {
-        "description": "I'm an electronics engineering student and full-stack engineer focused on industrial technology. Currently Lead Developer at an industrial manufacturing company where I design production software connecting embedded hardware with modern data infrastructure.s. I focus on building reliable systems that handle large volumes of sensor data, automate production workflows, and provide actionable insights through analytics and visualization.",
-        "stats": [
+    "en": {
+        "profile": {
+            "name": "Lucas Picchi",
+            "title": "Fullstack Engineer",
+            "bio": "Full-stack engineer building industrial IoT and telemetry platforms that connect embedded systems with scalable backend infrastructure. I design systems that ingest high-frequency sensor data, automate production workflows, and power real-time monitoring platforms used in manufacturing environments.",
+            "email": "picchilucas7@gmail.com",
+            "resumeUrl": "/resume_en.pdf"
+        },
+        "about": {
+            "description": "I'm an electronics engineering student and full-stack engineer focused on industrial technology. Currently Lead Developer at an industrial manufacturing company where I design production software connecting embedded hardware with modern data infrastructure.s. I focus on building reliable systems that handle large volumes of sensor data, automate production workflows, and provide actionable insights through analytics and visualization.",
+            "stats": [
+                {
+                    "label": "Years of Professional Experience",
+                    "value": "3+"
+                },
+                {
+                    "label": "Years Coding",
+                    "value": "6+"
+                }
+            ],
+            "interests": [
+                "Node.js",
+                "PostgreSQL",
+                "Redis",
+                "React",
+                "Linux",
+                "IoT",
+                "CI/CD"
+            ]
+        },
+        "skills": {
+            "Backend": [
+                "Node.js ",
+                "PostgreSQL",
+                "Redis",
+                "REST APIs",
+                "WebSockets",
+                "Data ingestion pipelines"
+            ],
+            "Infrastructure & DevOps": [
+                "Docker",
+                "Docker Compose",
+                "Nginx",
+                "Gitlab CI/CD",
+                "Linux Servers",
+                "VPS Deployment",
+                "CI/CD Pipelines"
+            ],
+            "Frontend": [
+                "React",
+                "ThreeJS",
+                "Realtime dashboards",
+                "Data visualization"
+            ],
+            "Leadership": [
+                "Technical Team Management",
+                "Developer Mentorship",
+                "System Design Architecture",
+                "Technical Selection & Hiring",
+                "Project Scoping & Roadmap"
+            ]
+        },
+        "projects": [
             {
-                "label": "Years of Professional Experience",
-                "value": "3+"
+                "title": "Industrial Telemetry Platform",
+                "description": "Real-time monitoring system for industrial compressors, featuring high-frequency data ingestion and live performance visualization.",
+                "video": "/telemetry_video.mkv",
+                "tags": [
+                    "Node.js",
+                    "Redis",
+                    "PostgreSQL",
+                    "Docker"
+                ],
+                "links": {
+                    "live": "#contact"
+                }
             },
             {
-                "label": "Years Coding",
-                "value": "6+"
+                "title": "Kanban VFD Repair shop CRM",
+                "description": "CRM for a repair shop, with a kanban board to handle issues, integration with legacy SMB and MAIL servers, docker-compose deployment and easy setup via a WEB GUI",
+                "video": "/crm_video.mkv",
+                "tags": [
+                    "NodeJS",
+                    "Docker",
+                    "PostgreSQL"
+                ],
+                "links": {
+                    "github": "https://github.com/Pichi-Cell/VFD-Management",
+                    "live": "#contact"
+                }
             }
         ],
-        "interests": [
-            "Node.js",
-            "PostgreSQL",
-            "Redis",
-            "React",
-            "Linux",
-            "IoT",
-            "CI/CD"
-        ]
+        "experience": [
+            {
+                "role": "Lead Developer",
+                "company": "DMD COMPRESORES SAIC",
+                "period": "Feb 2025 — Present",
+                "bullets": [
+                    "Architected a real-time telemetry platform for industrial compressor systems.",
+                    "Lead a team of 3 developers designing scalable backend systems and internal production tools.",
+                    "Optimizing industrial data ingestion pipelines using Redis and PostgreSQL.",
+                    "Designed and maintained CI/CD pipelines and containerized deployments using Docker and GitLab CI."
+                ]
+            },
+            {
+                "role": "Fullstack Developer / Embedded Systems / DevOps",
+                "company": "DMD COMPRESORES SAIC",
+                "period": "Jan 2024 — Jan 2025",
+                "bullets": [
+                    "Developed an automated QA system for production lines",
+                    "Designed and implemented backend services for industrial data processing.",
+                    "Engineered responsive real-time dashboards to visualize complex industrial telemetry metrics.",
+                    "Developed embedded data acquisition systems for industrial compressors.",
+                    "Built CI/CD pipelines for automated testing and deployment."
+                ]
+            },
+            {
+                "role": "Fullstack Developer",
+                "company": "Tech Solutions",
+                "period": "Mar 2022 — Dec 2023",
+                "bullets": [
+                    "Built and maintained scalable web applications using Node.js and React.",
+                    "Improved database performance through advanced indexing and query optimization strategies.",
+                    "Established the company's first CI/CD pipeline for automated testing and deployment."
+                ]
+            }
+        ],
+        "ui": {
+            "nav": {
+                "portfolio": "Portfolio",
+                "skills": "Skills",
+                "experience": "Experience",
+                "contact": "Contact"
+            },
+            "hero": {
+                "greeting": "I'm"
+            },
+            "about": {
+                "heading": "About",
+                "headingAccent": "Me",
+                "cvTitle": "Curriculum Vitae",
+                "cvSubtitle": "Download my full professional history",
+                "cvButton": "Download Resume"
+            },
+            "portfolio": {
+                "heading": "Featured Projects",
+                "subtitle": "A selection of recent work focusing on production ready applications.",
+                "demoButton": "Book a Demo"
+            },
+            "skills": {
+                "heading": "Core Competencies",
+                "subtitle": "Domain-specific expertise acquired through over a decade of hands-on engineering and leadership."
+            },
+            "experience": {
+                "heading": "Professional Timeline",
+                "subtitle": "Milestones of growth, leadership, and technical impact."
+            },
+            "contact": {
+                "heading": "Let's Build Something Together",
+                "subtitle": "Currently exploring new opportunities and architectural challenges. Reach out if you're looking for an engineering leader with a passion for scalable systems."
+            }
+        }
     },
-    "skills": {
-        "Backend": [
-            "Node.js ",
-            "PostgreSQL",
-            "Redis",
-            "REST APIs",
-            "WebSockets",
-            "Data ingestion pipelines"
-        ],
-        "Infrastructure & DevOps": [
-            "Docker",
-            "Docker Compose",
-            "Nginx",
-            "Gitlab CI/CD",
-            "Linux Servers",
-            "VPS Deployment",
-            "CI/CD Pipelines"
-        ],
-        "Frontend": [
-            "React",
-            "ThreeJS",
-            "Realtime dashboards",
-            "Data visualization"
-        ],
-        "Leadership": [
-            "Technical Team Management",
-            "Developer Mentorship",
-            "System Design Architecture",
-            "Technical Selection & Hiring",
-            "Project Scoping & Roadmap"
-        ]
-    },
-    "projects": [
-        {
-            "title": "Industrial Telemetry Platform",
-            "description": "Real-time monitoring system for industrial compressors, featuring high-frequency data ingestion and live performance visualization.",
-            "video": "/telemetry_video.mkv",
-            "tags": [
+    "es": {
+        "profile": {
+            "name": "Lucas Picchi",
+            "title": "Ingeniero Fullstack",
+            "bio": "Ingeniero full-stack construyendo plataformas industriales de IoT y telemetría que conectan sistemas embebidos con infraestructura backend escalable. Diseño sistemas que ingestan datos de sensores a alta frecuencia, automatizan flujos de producción y alimentan plataformas de monitoreo en tiempo real utilizadas en entornos de manufactura.",
+            "email": "picchilucas7@gmail.com",
+            "resumeUrl": "/resume_es.pdf"
+        },
+        "about": {
+            "description": "Soy estudiante de ingeniería electrónica e ingeniero full-stack. Actualmente soy Líder de Desarrollo en una empresa de manufactura industrial donde diseño software de producción conectando hardware embebido con infraestructura de datos moderna. Me enfoco en construir sistemas confiables que manejan grandes volúmenes de datos de sensores, automatizan flujos de producción y proporcionan información accionable a través de analítica y visualización.",
+            "stats": [
+                {
+                    "label": "Años de Experiencia Profesional",
+                    "value": "3+"
+                },
+                {
+                    "label": "Años Programando",
+                    "value": "6+"
+                }
+            ],
+            "interests": [
                 "Node.js",
-                "Redis",
                 "PostgreSQL",
-                "Docker"
-            ],
-            "links": {
-                "live": "#contact"
-            }
+                "Redis",
+                "React",
+                "Linux",
+                "IoT",
+                "CI/CD"
+            ]
         },
-        {
-            "title": "Kanban VFD Repair shop CRM",
-            "description": "CRM for a repair shop, with a kanban board to handle issues, integration with legacy SMB and MAIL servers, docker-compose deployment and easy setup via a WEB GUI",
-            "video": "/crm_video.mkv",
-            "tags": [
-                "NodeJS",
+        "skills": {
+            "Backend": [
+                "Node.js ",
+                "PostgreSQL",
+                "Redis",
+                "REST APIs",
+                "WebSockets",
+                "Ingesta de datos"
+            ],
+            "Infraestructura & DevOps": [
                 "Docker",
-                "PostgreSQL"
+                "Docker Compose",
+                "Nginx",
+                "Gitlab CI/CD",
+                "Servidores Linux",
+                "Despliegue VPS",
+                "Pipelines CI/CD"
             ],
-            "links": {
-                "github": "https://github.com/Pichi-Cell/VFD-Management",
-                "live": "#contact"
+            "Frontend": [
+                "React",
+                "ThreeJS",
+                "Dashboards en tiempo real",
+                "Visualización de datos"
+            ],
+            "Liderazgo": [
+                "Gestión de Equipos Técnicos",
+                "Mentoría de Desarrolladores",
+                "Arquitectura de Diseño de Sistemas",
+                "Alcance y Hoja de Ruta de Proyectos"
+            ]
+        },
+        "projects": [
+            {
+                "title": "Plataforma de Telemetría Industrial",
+                "description": "Sistema de monitoreo en tiempo real para compresores industriales, con ingesta de datos a alta frecuencia y visualización de rendimiento en vivo.",
+                "video": "/telemetry_video.mkv",
+                "tags": [
+                    "Node.js",
+                    "Redis",
+                    "PostgreSQL",
+                    "Docker"
+                ],
+                "links": {
+                    "live": "#contact"
+                }
+            },
+            {
+                "title": "CRM Kanban para Taller de Reparación de VFD",
+                "description": "CRM para un taller de reparación, con tablero kanban para gestionar incidencias, integración con servidores SMB y MAIL legacy, despliegue con docker-compose y configuración sencilla vía una GUI WEB.",
+                "video": "/crm_video.mkv",
+                "tags": [
+                    "NodeJS",
+                    "Docker",
+                    "PostgreSQL"
+                ],
+                "links": {
+                    "github": "https://github.com/Pichi-Cell/VFD-Management",
+                    "live": "#contact"
+                }
+            }
+        ],
+        "experience": [
+            {
+                "role": "Líder de Desarrollo",
+                "company": "DMD COMPRESORES SAIC",
+                "period": "Feb 2025 — Presente",
+                "bullets": [
+                    "Diseñé la arquitectura de una plataforma de telemetría en tiempo real para sistemas de compresores industriales.",
+                    "Lidero un equipo de 3 desarrolladores diseñando sistemas backend escalables y herramientas internas de producción.",
+                    "Optimizando pipelines de ingesta de datos industriales usando Redis y PostgreSQL.",
+                    "Diseñé y mantuve pipelines de CI/CD y despliegues contenerizados usando Docker y GitLab CI."
+                ]
+            },
+            {
+                "role": "Desarrollador Fullstack / Sistemas Embebidos / DevOps",
+                "company": "DMD COMPRESORES SAIC",
+                "period": "Ene 2024 — Ene 2025",
+                "bullets": [
+                    "Desarrollé un sistema automatizado de QA para líneas de producción.",
+                    "Diseñé e implementé servicios backend para procesamiento de datos industriales.",
+                    "Diseñé dashboards responsive en tiempo real para visualizar métricas complejas de telemetría industrial.",
+                    "Desarrollé sistemas de adquisición de datos embebidos para compresores industriales.",
+                    "Construí pipelines de CI/CD para testing automatizado y despliegue."
+                ]
+            },
+            {
+                "role": "Desarrollador Fullstack",
+                "company": "Tech Solutions",
+                "period": "Mar 2022 — Dic 2023",
+                "bullets": [
+                    "Construí y mantuve aplicaciones web escalables usando Node.js y React.",
+                    "Mejoré el rendimiento de la base de datos mediante estrategias avanzadas de indexación y optimización de queries.",
+                    "Establecí pipelines de CI/CD para la empresa para testing automatizado y despliegue."
+                ]
+            }
+        ],
+        "ui": {
+            "nav": {
+                "portfolio": "Proyectos",
+                "skills": "Habilidades",
+                "experience": "Experiencia",
+                "contact": "Contacto"
+            },
+            "hero": {
+                "greeting": "Soy"
+            },
+            "about": {
+                "heading": "Sobre",
+                "headingAccent": "Mí",
+                "cvTitle": "Curriculum Vitae",
+                "cvSubtitle": "Descargá mi historial profesional completo",
+                "cvButton": "Descargar CV"
+            },
+            "portfolio": {
+                "heading": "Proyectos Destacados",
+                "subtitle": "Una selección de trabajos recientes enfocados en aplicaciones listas para producción.",
+                "demoButton": "Agendar una Demo"
+            },
+            "skills": {
+                "heading": "Competencias Principales",
+                "subtitle": "Experiencia específica de dominio adquirida a través de más de una década de ingeniería práctica y liderazgo."
+            },
+            "experience": {
+                "heading": "Línea de Tiempo Profesional",
+                "subtitle": "Hitos de crecimiento, liderazgo e impacto técnico."
+            },
+            "contact": {
+                "heading": "Construyamos Algo Juntos",
+                "subtitle": "Actualmente explorando nuevas oportunidades y desafíos arquitectónicos. Contactame si buscás un líder de ingeniería con pasión por sistemas escalables."
             }
         }
-    ],
-    "experience": [
-        {
-            "role": "Lead Developer",
-            "company": "DMD COMPRESORES SAIC",
-            "period": "Feb 2025 — Present",
-            "bullets": [
-                "Architected a real-time telemetry platform for industrial compressor systems.",
-                "Lead a team of 3 developers designing scalable backend systems and internal production tools.",
-                "Optimizing industrial data ingestion pipelines using Redis and PostgreSQL.",
-                "Designed and maintained CI/CD pipelines and containerized deployments using Docker and GitLab CI."
-            ]
-        },
-        {
-            "role": "Fullstack Developer / Embedded Systems / DevOps",
-            "company": "DMD COMPRESORES SAIC",
-            "period": "Jan 2024 — Jan 2025",
-            "bullets": [
-                "Developed an automated QA system for production lines",
-                "Designed and implemented backend services for industrial data processing.",
-                "Engineered responsive real-time dashboards to visualize complex industrial telemetry metrics.",
-                "Developed embedded data acquisition systems for industrial compressors.",
-                "Built CI/CD pipelines for automated testing and deployment."
-            ]
-        },
-        {
-            "role": "Fullstack Developer",
-            "company": "Tech Solutions",
-            "period": "Mar 2022 — Dec 2023",
-            "bullets": [
-                "Built and maintained scalable web applications using Node.js and React.",
-                "Improved database performance through advanced indexing and query optimization strategies.",
-                "Established the company's first CI/CD pipeline for automated testing and deployment."
-            ]
-        }
-    ]
+    }
 }

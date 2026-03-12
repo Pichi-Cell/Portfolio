@@ -7,8 +7,12 @@ import Experience from './sections/Experience';
 import Contact from './sections/Contact';
 import ScrollNavbar from './components/layout/ScrollNavbar';
 import content from './data/content.json';
+import { LanguageProvider, useLanguage } from './context/LanguageContext';
 
-const App = () => {
+const AppContent = () => {
+    const { lang } = useLanguage();
+    const t = content[lang];
+
     return (
         <div className="relative min-h-screen">
             {/* Aurora Background */}
@@ -18,18 +22,26 @@ const App = () => {
                 <div className="aurora-blob blob-3"></div>
             </div>
 
-            <ScrollNavbar />
+            <ScrollNavbar ui={t.ui} />
 
             <main>
-                <Hero data={content.profile} interests={content.about.interests} />
-                <About data={content.about} resumeUrl={content.profile.resumeUrl} />
-                <Portfolio projects={content.projects} />
-                <SkillsMatrix skills={content.skills} />
-                <Experience experience={content.experience} />
-                <Contact />
+                <Hero data={t.profile} interests={t.about.interests} ui={t.ui.hero} />
+                <About data={t.about} resumeUrl={t.profile.resumeUrl} ui={t.ui.about} />
+                <Portfolio projects={t.projects} ui={t.ui.portfolio} />
+                <SkillsMatrix skills={t.skills} ui={t.ui.skills} />
+                <Experience experience={t.experience} ui={t.ui.experience} />
+                <Contact email={t.profile.email} ui={t.ui.contact} />
             </main>
 
         </div>
+    );
+};
+
+const App = () => {
+    return (
+        <LanguageProvider>
+            <AppContent />
+        </LanguageProvider>
     );
 };
 

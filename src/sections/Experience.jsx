@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 import GlassCard from '../components/ui/GlassCard';
 import Badge from '../components/ui/Badge';
 
-const Experience = ({ experience }) => {
+const Experience = ({ experience, ui }) => {
     return (
         <section id="experience" className="py-24 px-4 max-w-6xl mx-auto">
             <div className="text-center mb-16">
-                <h2 className="text-4xl font-bold text-white mb-4">Professional Timeline</h2>
-                <p className="text-slate-400">Milestones of growth, leadership, and technical impact.</p>
+                <h2 className="text-4xl font-bold text-white mb-4">{ui.heading}</h2>
+                <p className="text-slate-400">{ui.subtitle}</p>
             </div>
 
             <div className="relative flex overflow-x-auto pb-12 gap-8 snap-x no-scrollbar">

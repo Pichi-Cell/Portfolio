@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 export const useScrollDirection = () => {
     const [scrollDirection, setScrollDirection] = useState('up');
     const [prevOffset, setPrevOffset] = useState(0);
-    const [isVisible, setIsVisible] = useState(false);
+    const [isVisible, setIsVisible] = useState(true);
 
     useEffect(() => {
         const handleScroll = () => {

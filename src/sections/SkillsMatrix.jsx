@@ -2,14 +2,14 @@ import React from 'react';
 import GlassCard from '../components/ui/GlassCard';
 import Badge from '../components/ui/Badge';
 
-const SkillsMatrix = ({ skills }) => {
+const SkillsMatrix = ({ skills, ui }) => {
     return (
         <section id="skills" className="py-24 px-4 bg-slate-900/30">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl font-bold text-white mb-4">Core Competencies</h2>
+                    <h2 className="text-4xl font-bold text-white mb-4">{ui.heading}</h2>
                     <p className="text-slate-400 max-w-2xl mx-auto">
-                        Domain-specific expertise acquired through over a decade of hands-on engineering and leadership.
+                        {ui.subtitle}
                     </p>
                 </div>
 

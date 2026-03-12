@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import HeroCanvas from '../components/webgl/HeroCanvas';
 import Badge from '../components/ui/Badge';
 
-const Hero = ({ data, interests }) => {
+const Hero = ({ data, interests, ui }) => {
     return (
         <section className="relative min-h-screen flex items-center justify-center pt-20 px-4 overflow-hidden">
             {/* WebGL Background */}
@@ -20,7 +20,7 @@ const Hero = ({ data, interests }) => {
 
 
                     <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                        I'm <span className="text-white">{data.name}</span>
+                        {ui.greeting} <span className="text-white">{data.name}</span>
                         <br />
                         <span className=" text-emerald-400  bg-clip-text">
                             {data.title}

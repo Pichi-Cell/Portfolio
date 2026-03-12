@@ -4,13 +4,13 @@ import Badge from '../components/ui/Badge';
 import Button from '../components/ui/Button';
 import { Github, ExternalLink, Play } from 'lucide-react';
 
-const Portfolio = ({ projects }) => {
+const Portfolio = ({ projects, ui }) => {
     return (
         <section id="portfolio" className="py-24 px-4 max-w-7xl mx-auto">
             <div className="text-center mb-16">
-                <h2 className="text-4xl font-bold text-white mb-4">Featured Projects</h2>
+                <h2 className="text-4xl font-bold text-white mb-4">{ui.heading}</h2>
                 <p className="text-slate-400 max-w-2xl mx-auto">
-                    A selection of recent work focusing on production ready applications.
+                    {ui.subtitle}
                 </p>
             </div>
 
@@ -49,7 +49,7 @@ const Portfolio = ({ projects }) => {
                                 </a>}
                                 {project.links.live && <a href={project.links.live} className="flex-1">
                                     <Button variant="primary" className="w-full flex items-center justify-center gap-2">
-                                        <ExternalLink size={18} /> Book a Demo
+                                        <ExternalLink size={18} /> {ui.demoButton}
                                     </Button>
                                 </a>}
                             </div>
