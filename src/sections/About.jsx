@@ -1,14 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import GlassCard from '../components/ui/GlassCard';
-import Badge from '../components/ui/Badge';
 import Button from '../components/ui/Button';
 import { Download, FileText } from 'lucide-react';
 
 const About = ({ data, resumeUrl }) => {
     if (!data) return null;
 
-    const { description, stats, interests } = data;
+    const { description, stats } = data;
 
     return (
         <section id="about" className="py-24 px-4 max-w-6xl mx-auto">
@@ -28,22 +27,6 @@ const About = ({ data, resumeUrl }) => {
                     <p className="text-lg text-slate-300 leading-relaxed mb-8">
                         {description}
                     </p>
-
-                    <div className="flex flex-wrap gap-3">
-                        {interests.map((interest, index) => (
-                            <motion.div
-                                key={index}
-                                initial={{ opacity: 0, scale: 0.8 }}
-                                whileInView={{ opacity: 1, scale: 1 }}
-                                transition={{ delay: index * 0.1 }}
-                                viewport={{ once: true }}
-                            >
-                                <Badge variant="outline" className="text-sm py-1.5 px-4 border-emerald-500/30 text-emerald-400">
-                                    {interest}
-                                </Badge>
-                            </motion.div>
-                        ))}
-                    </div>
                 </motion.div>
 
                 {/* Stats & Visuals */}

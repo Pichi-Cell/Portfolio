@@ -21,7 +21,7 @@ const App = () => {
             <ScrollNavbar />
 
             <main>
-                <Hero data={content.profile} />
+                <Hero data={content.profile} interests={content.about.interests} />
                 <About data={content.about} resumeUrl={content.profile.resumeUrl} />
                 <Portfolio projects={content.projects} />
                 <SkillsMatrix skills={content.skills} />

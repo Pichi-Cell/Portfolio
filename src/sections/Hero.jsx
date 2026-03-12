@@ -1,10 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import HeroCanvas from '../components/webgl/HeroCanvas';
-import Button from '../components/ui/Button';
-import { ChevronRight, Download } from 'lucide-react';
+import Badge from '../components/ui/Badge';
 
-const Hero = ({ data }) => {
+const Hero = ({ data, interests }) => {
     return (
         <section className="relative min-h-screen flex items-center justify-center pt-20 px-4 overflow-hidden">
             {/* WebGL Background */}
@@ -31,6 +30,23 @@ const Hero = ({ data }) => {
                     <p className="text-xl text-slate-400 mb-10 max-w-xl leading-relaxed">
                         {data.bio}
                     </p>
+                    <div className="flex flex-wrap gap-3">
+
+                        {interests.map((interest, index) => (
+                            <motion.div
+                                key={index}
+                                initial={{ opacity: 0, scale: 0.8 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                transition={{ delay: index * 0.1 }}
+                                viewport={{ once: true }}
+                            >
+                                <Badge variant="outline" className="text-sm py-1.5 px-4 border-emerald-500/30 text-emerald-400">
+                                    {interest}
+                                </Badge>
+                            </motion.div>
+                        ))}
+                    </div>
+
 
                     <div className="flex flex-wrap gap-4">
                     </div>

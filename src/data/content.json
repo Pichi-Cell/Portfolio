@@ -1,16 +1,16 @@
 {
     "profile": {
         "name": "Lucas Picchi",
-        "title": "Tech Lead and Fullstack Developer",
-        "bio": "Tech Lead and full-stack developer currently building industrial software, from embedded telemetry systems to scalable backend infrastructure.",
+        "title": "Fullstack Engineer",
+        "bio": "Full-stack engineer building industrial IoT and telemetry platforms that connect embedded systems with scalable backend infrastructure. I design systems that ingest high-frequency sensor data, automate production workflows, and power real-time monitoring platforms used in manufacturing environments.",
         "email": "picchilucas7@gmail.com",
         "resumeUrl": "/lucas-picchi-resume.pdf"
     },
     "about": {
-        "description": "Hi, I'm Lucas — an electronics engineering student and full-stack developer focused on industrial technology. I currently work as a Lead Developer at a cross-industry manufacturing company specializing in air compressor systems, where I design and build production-critical software that connects industrial hardware with modern data infrastructure. My work spans the full stack of industrial software: from embedded data acquisition and telemetry systems to backend services and real-time monitoring platforms. I focus on building reliable systems that handle large volumes of sensor data, automate production workflows, and provide actionable insights through analytics and visualization.",
+        "description": "I'm an electronics engineering student and full-stack engineer focused on industrial technology. Currently Lead Developer at an industrial manufacturing company where I design production software connecting embedded hardware with modern data infrastructure.s. I focus on building reliable systems that handle large volumes of sensor data, automate production workflows, and provide actionable insights through analytics and visualization.",
         "stats": [
             {
-                "label": "Years of professional Experience",
+                "label": "Years of Professional Experience",
                 "value": "3+"
             },
             {
@@ -19,32 +19,38 @@
             }
         ],
         "interests": [
-            "IoT",
-            "Full-Stack",
+            "Node.js",
+            "PostgreSQL",
+            "Redis",
+            "React",
             "Linux",
-            "DevOps",
-            "Telemetry",
-            "System Design"
+            "IoT",
+            "CI/CD"
         ]
     },
     "skills": {
-        "Backend Architecture": [
+        "Backend": [
             "Node.js ",
-            "PostgreSQL & Redis",
-            "API Optimization",
-            "Real-time Data Ingestion"
-        ],
-        "Industrial Tech & IoT": [
-            "Industrial Telemetry",
-            "Monitoring Platforms",
-            "Automated QA Systems",
-            "Sensor Data Processing"
+            "PostgreSQL",
+            "Redis",
+            "REST APIs",
+            "WebSockets",
+            "Data ingestion pipelines"
         ],
         "Infrastructure & DevOps": [
-            "Docker & Docker Compose",
+            "Docker",
+            "Docker Compose",
+            "Nginx",
+            "Gitlab CI/CD",
+            "Linux Servers",
             "VPS Deployment",
-            "CI/CD Pipelines",
-            "Nginx"
+            "CI/CD Pipelines"
+        ],
+        "Frontend": [
+            "React",
+            "ThreeJS",
+            "Realtime dashboards",
+            "Data visualization"
         ],
         "Leadership": [
             "Technical Team Management",
@@ -55,21 +61,6 @@
         ]
     },
     "projects": [
-        {
-            "title": "Kanban VFD Repair shop CRM",
-            "description": "CRM for a repair shop, with a kanban board to handle issues, integration with legacy SMB and MAIL servers, docker-compose deployment and easy setup via a WEB GUI",
-            "video": "/crm_video.mkv",
-            "tags": [
-                "Full-Stack",
-                "Docker",
-                "B2B",
-                "PostgreSQL"
-            ],
-            "links": {
-                "github": "https://github.com/Pichi-Cell/VFD-Management",
-                "live": "#contact"
-            }
-        },
         {
             "title": "Industrial Telemetry Platform",
             "description": "Real-time monitoring system for industrial compressors, featuring high-frequency data ingestion and live performance visualization.",
@@ -83,6 +74,20 @@
             "links": {
                 "live": "#contact"
             }
+        },
+        {
+            "title": "Kanban VFD Repair shop CRM",
+            "description": "CRM for a repair shop, with a kanban board to handle issues, integration with legacy SMB and MAIL servers, docker-compose deployment and easy setup via a WEB GUI",
+            "video": "/crm_video.mkv",
+            "tags": [
+                "NodeJS",
+                "Docker",
+                "PostgreSQL"
+            ],
+            "links": {
+                "github": "https://github.com/Pichi-Cell/VFD-Management",
+                "live": "#contact"
+            }
         }
     ],
     "experience": [
@@ -92,9 +97,9 @@
             "period": "Feb 2025 — Present",
             "bullets": [
                 "Architected a real-time telemetry platform for industrial compressor systems.",
-                "Leading and mentoring a technical team of three developers on software best practices and scalable architecture.",
+                "Lead a team of 3 developers designing scalable backend systems and internal production tools.",
                 "Optimizing industrial data ingestion pipelines using Redis and PostgreSQL.",
-                "Managing full-lifecycle deployments on VPS environments using Docker and GitLab CI/CD."
+                "Designed and maintained CI/CD pipelines and containerized deployments using Docker and GitLab CI."
             ]
         },
         {
