@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import HeroCanvas from '../components/webgl/HeroCanvas';
 import Badge from '../components/ui/Badge';
 
-const Hero = ({ data, interests, ui }) => {
+const Hero = ({ data, ui }) => {
     return (
         <section className="relative min-h-screen flex items-center justify-center pt-20 px-4 overflow-hidden">
             {/* WebGL Background */}
@@ -32,7 +32,7 @@ const Hero = ({ data, interests, ui }) => {
                     </p>
                     <div className="flex flex-wrap gap-3">
 
-                        {interests.map((interest, index) => (
+                        {data.interests.map((interest, index) => (
                             <motion.div
                                 key={index}
                                 initial={{ opacity: 0, scale: 0.8 }}

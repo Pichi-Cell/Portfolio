@@ -1,11 +1,10 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import GlassCard from '../components/ui/GlassCard';
 import Badge from '../components/ui/Badge';
 
 const Experience = ({ experience, ui }) => {
     return (
-        <section id="experience" className="py-24 px-4 max-w-6xl mx-auto">
+        <section id="experience" className="py-24 px-3 max-w-6xl mx-auto">
             <div className="text-center mb-16">
                 <h2 className="text-4xl font-bold text-white mb-4">{ui.heading}</h2>
                 <p className="text-slate-400">{ui.subtitle}</p>

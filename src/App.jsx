@@ -25,7 +25,7 @@ const AppContent = () => {
             <ScrollNavbar ui={t.ui} />
 
             <main>
-                <Hero data={t.profile} interests={t.about.interests} ui={t.ui.hero} />
+                <Hero data={t.profile} ui={t.ui.hero} />
                 <About data={t.about} resumeUrl={t.profile.resumeUrl} ui={t.ui.about} />
                 <Portfolio projects={t.projects} ui={t.ui.portfolio} />
                 <SkillsMatrix skills={t.skills} ui={t.ui.skills} />

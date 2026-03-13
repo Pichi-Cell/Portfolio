@@ -5,7 +5,16 @@
             "title": "Fullstack Engineer",
             "bio": "Full-stack engineer building industrial IoT and telemetry platforms that connect embedded systems with scalable backend infrastructure. I design systems that ingest high-frequency sensor data, automate production workflows, and power real-time monitoring platforms used in manufacturing environments.",
             "email": "picchilucas7@gmail.com",
-            "resumeUrl": "/resume_en.pdf"
+            "resumeUrl": "/resume_en.pdf",
+            "interests": [
+                "Node.js",
+                "PostgreSQL",
+                "Redis",
+                "React",
+                "Linux",
+                "IoT",
+                "CI/CD"
+            ]
         },
         "about": {
             "description": "I'm an electronics engineering student and full-stack engineer focused on industrial technology. Currently Lead Developer at an industrial manufacturing company where I design production software connecting embedded hardware with modern data infrastructure.s. I focus on building reliable systems that handle large volumes of sensor data, automate production workflows, and provide actionable insights through analytics and visualization.",
@@ -18,15 +27,6 @@
                     "label": "Years Coding",
                     "value": "6+"
                 }
-            ],
-            "interests": [
-                "Node.js",
-                "PostgreSQL",
-                "Redis",
-                "React",
-                "Linux",
-                "IoT",
-                "CI/CD"
             ]
         },
         "skills": {
@@ -168,7 +168,16 @@
             "title": "Ingeniero Fullstack",
             "bio": "Ingeniero full-stack construyendo plataformas industriales de IoT y telemetría que conectan sistemas embebidos con infraestructura backend escalable. Diseño sistemas que ingestan datos de sensores a alta frecuencia, automatizan flujos de producción y alimentan plataformas de monitoreo en tiempo real utilizadas en entornos de manufactura.",
             "email": "picchilucas7@gmail.com",
-            "resumeUrl": "/resume_es.pdf"
+            "resumeUrl": "/resume_es.pdf",
+            "interests": [
+                "Node.js",
+                "PostgreSQL",
+                "Redis",
+                "React",
+                "Linux",
+                "IoT",
+                "CI/CD"
+            ]
         },
         "about": {
             "description": "Soy estudiante de ingeniería electrónica e ingeniero full-stack. Actualmente soy Líder de Desarrollo en una empresa de manufactura industrial donde diseño software de producción conectando hardware embebido con infraestructura de datos moderna. Me enfoco en construir sistemas confiables que manejan grandes volúmenes de datos de sensores, automatizan flujos de producción y proporcionan información accionable a través de analítica y visualización.",
@@ -181,15 +190,6 @@
                     "label": "Años Programando",
                     "value": "6+"
                 }
-            ],
-            "interests": [
-                "Node.js",
-                "PostgreSQL",
-                "Redis",
-                "React",
-                "Linux",
-                "IoT",
-                "CI/CD"
             ]
         },
         "skills": {
