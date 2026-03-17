@@ -2,7 +2,7 @@
     "en": {
         "profile": {
             "name": "Lucas Picchi",
-            "title": "Fullstack Engineer",
+            "title": "Fullstack Developer",
             "bio": "Full-stack engineer building industrial IoT and telemetry platforms that connect embedded systems with scalable backend infrastructure. I design systems that ingest high-frequency sensor data, automate production workflows, and power real-time monitoring platforms used in manufacturing environments.",
             "email": "picchilucas7@gmail.com",
             "resumeUrl": "/resume_en.pdf",
@@ -116,12 +116,12 @@
                 ]
             },
             {
-                "role": "Fullstack Developer",
-                "company": "Tech Solutions",
-                "period": "Mar 2022 — Dec 2023",
+                "role": "Fullstack internship",
+                "company": "DMD COMPRESORES SAIC",
+                "period": "Nov 2023 - Dec 2023",
                 "bullets": [
                     "Built and maintained scalable web applications using Node.js and React.",
-                    "Improved database performance through advanced indexing and query optimization strategies.",
+                    "Improved database performance through indexing and query optimization strategies.",
                     "Established the company's first CI/CD pipeline for automated testing and deployment."
                 ]
             }
@@ -165,7 +165,7 @@
     "es": {
         "profile": {
             "name": "Lucas Picchi",
-            "title": "Ingeniero Fullstack",
+            "title": "Desarrollador Fullstack",
             "bio": "Ingeniero full-stack construyendo plataformas industriales de IoT y telemetría que conectan sistemas embebidos con infraestructura backend escalable. Diseño sistemas que ingestan datos de sensores a alta frecuencia, automatizan flujos de producción y alimentan plataformas de monitoreo en tiempo real utilizadas en entornos de manufactura.",
             "email": "picchilucas7@gmail.com",
             "resumeUrl": "/resume_es.pdf",
@@ -278,12 +278,12 @@
                 ]
             },
             {
-                "role": "Desarrollador Fullstack",
+                "role": "Pasantia desarrollador fullstack",
                 "company": "Tech Solutions",
-                "period": "Mar 2022 — Dic 2023",
+                "period": "Oct 2023 - Dic 2023",
                 "bullets": [
                     "Construí y mantuve aplicaciones web escalables usando Node.js y React.",
-                    "Mejoré el rendimiento de la base de datos mediante estrategias avanzadas de indexación y optimización de queries.",
+                    "Mejoré el rendimiento de la base de datos mediante estrategias de indexación y optimización de queries.",
                     "Establecí pipelines de CI/CD para la empresa para testing automatizado y despliegue."
                 ]
             }
