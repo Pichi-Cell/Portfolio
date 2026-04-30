@@ -2,22 +2,24 @@
     "en": {
         "profile": {
             "name": "Lucas Picchi",
-            "title": "Fullstack Developer",
-            "bio": "Full-stack developer building industrial IoT and telemetry platforms that connect embedded systems with scalable backend infrastructure. I design systems that ingest high-frequency sensor data, automate production workflows, and power real-time monitoring platforms used in manufacturing environments.",
+            "title": "Fullstack Engineer | Team Lead",
+            "bio": "Fullstack Developer and Team Lead specializing in Industrial IoT and telemetry. Connecting embedded systems and infrastructure. Currently designing high-frequency data ingestion pipelines, backend systems, automating workflows, and leading a technical team to deliver efficient solutions.",
             "email": "hello@lpicchi.com",
             "resumeUrl": "/resume_en.pdf",
             "interests": [
+                "TypeScript",
                 "Node.js",
                 "PostgreSQL",
                 "Redis",
                 "React",
-                "Linux",
+                "Next.js",
                 "IoT",
+                "AI/LLMs",
                 "CI/CD"
             ]
         },
         "about": {
-            "description": "I'm an electronics engineering student and full-stack developer focused on industrial technology. Currently Lead Developer at an industrial manufacturing company where I design production software connecting embedded hardware with modern data infrastructure.s. I focus on building reliable systems that handle large volumes of sensor data, automate production workflows, and provide actionable insights through analytics and visualization.",
+            "description": "Tech enthusiast and Electronic Engineering student, I spend most of my day thinking about computers. Fullstack Developer and Team Lead specializing in Industrial IoT and telemetry. I focus on connecting embedded systems with robust infrastructure, designing high-frequency data ingestion pipelines, automating workflows, and leading a technical team to deliver efficient solutions.",
             "stats": [
                 {
                     "label": "Years of Professional Experience",
@@ -31,34 +33,46 @@
         },
         "skills": {
             "Backend": [
-                "Node.js ",
-                "PostgreSQL",
-                "Redis",
-                "REST APIs",
+                "Typescript",
+                "Python",
+                "RESTful APIs",
                 "WebSockets",
-                "Data ingestion pipelines"
-            ],
-            "Infrastructure & DevOps": [
-                "Docker",
-                "Docker Compose",
-                "Nginx",
-                "Gitlab CI/CD",
-                "Linux Servers",
-                "VPS Deployment",
-                "CI/CD Pipelines"
+                "C (Embedded)",
+                "Node.js"
             ],
             "Frontend": [
                 "React",
-                "ThreeJS",
-                "Realtime dashboards",
-                "Data visualization"
+                "TypeScript",
+                "Next.js",
+                "Tailwind CSS",
+                "Three.js"
             ],
-            "Leadership": [
-                "Technical Team Management",
-                "Developer Mentorship",
-                "System Design Architecture",
-                "Technical Selection & Hiring",
-                "Project Scoping & Roadmap"
+            "AI": [
+                "Context Window Management",
+                "LLM-orchestrated workflows",
+                "Spec declaration / Spec kits"
+            ],
+            "Data & Infrastructure": [
+                "PostgreSQL",
+                "Redis",
+                "MongoDB",
+                "Docker",
+                "Docker Compose",
+                "Nginx",
+                "Linux Server Administration"
+            ],
+            "DevOps & Tools": [
+                "GitLab CI/CD",
+                "Jenkins",
+                "Git",
+                "Bash Scripting",
+                "Grafana"
+            ],
+            "Leadership & Coworking": [
+                "Team Lead",
+                "Mentorship",
+                "Agile Workflows",
+                "Stakeholder Management"
             ]
         },
         "projects": [
@@ -97,33 +111,41 @@
                 "company": "DMD COMPRESORES SAIC",
                 "period": "Feb 2025 — Present",
                 "bullets": [
-                    "Architected a real-time telemetry platform for industrial compressor systems.",
-                    "Lead a team of 3 developers designing scalable backend systems and internal production tools.",
-                    "Optimizing industrial data ingestion pipelines using Redis and PostgreSQL.",
-                    "Designed and maintained CI/CD pipelines and containerized deployments using Docker and GitLab CI."
+                    "Developing an end-to-end real-time telemetry platform for industrial compressor monitoring and data visualization using Node.JS, Typescript, React and TailwindCSS. Worked as team leader in this project.",
+                    "Optimized data pipelines using Redis and PostgreSQL to handle massive historical datasets and high-frequency sensor ingestion without performance degradation.",
+                    "Managed Infrastructure, deploying containerized applications and automated CI/CD pipelines via GitLab."
                 ]
             },
             {
-                "role": "Fullstack Developer / Embedded Systems / DevOps",
+                "role": "Fullstack / Embedded",
                 "company": "DMD COMPRESORES SAIC",
-                "period": "Jan 2024 — Jan 2025",
+                "period": "Jan 2024 — Feb 2025",
                 "bullets": [
-                    "Developed an automated QA system for production lines",
-                    "Designed and implemented backend services for industrial data processing.",
-                    "Engineered responsive real-time dashboards to visualize complex industrial telemetry metrics.",
-                    "Developed embedded data acquisition systems for industrial compressors.",
-                    "Built CI/CD pipelines for automated testing and deployment."
+                    "Developed an automated testing system for production lines connecting industrial equipment and PLCs to a modern web application using ModBus communication with Node.JS.",
+                    "Implemented real-time dashboards featuring complex data visualizations for industrial metrics using React.",
+                    "Developed embedded acquisition systems to interface hardware sensors with backend services using C."
                 ]
             },
             {
-                "role": "Fullstack internship",
-                "company": "DMD COMPRESORES SAIC",
-                "period": "Nov 2023 - Dec 2023",
+                "role": "Internship",
+                "company": "DMD COMPRESORES",
+                "period": "2023",
                 "bullets": [
-                    "Built and maintained scalable web applications using Node.js and React.",
-                    "Improved database performance through indexing and query optimization strategies.",
-                    "Established the company's first CI/CD pipeline for automated testing and deployment."
+                    "Maintained low scale web applications using Node.js and React.",
+                    "Optimized database performance through indexing and query refactoring, significantly reducing API response times."
                 ]
+            }
+        ],
+        "education": [
+            {
+                "title": "Electronic Engineering (In Progress)",
+                "institution": "Universidad Tecnológica Nacional (UTN)",
+                "period": "2024 – 2029 (Expected)"
+            },
+            {
+                "title": "Technical High School in Electronics",
+                "institution": "E.E.S.T. N°9 Lanús, Buenos Aires",
+                "period": "2017 – 2023"
             }
         ],
         "ui": {
@@ -165,22 +187,24 @@
     "es": {
         "profile": {
             "name": "Lucas Picchi",
-            "title": "Desarrollador Fullstack",
-            "bio": "Desarrollador full-stack construyendo plataformas industriales de IoT y telemetría que conectan sistemas embebidos con infraestructura backend escalable. Diseño sistemas que ingestan datos de sensores a alta frecuencia, automatizan flujos de producción y alimentan plataformas de monitoreo en tiempo real utilizadas en entornos de manufactura.",
+            "title": "Desarrollador Full-Stack | Team Leader",
+            "bio": "Desarrollador Fullstack y TL especializado en IoT industrial y telemetría. Conectando sistemas embebidos con infraestructura. Actualmente diseñando pipelines de ingesta de datos de alta frecuencia, sistemas de backend, automatizando procesos y liderando un equipo técnico a entregar soluciones eficientes.",
             "email": "hello@lpicchi.com",
             "resumeUrl": "/resume_es.pdf",
             "interests": [
+                "TypeScript",
                 "Node.js",
                 "PostgreSQL",
                 "Redis",
                 "React",
-                "Linux",
+                "Next.js",
                 "IoT",
+                "AI/LLMs",
                 "CI/CD"
             ]
         },
         "about": {
-            "description": "Soy estudiante de ingeniería electrónica y desarrollador full-stack. Actualmente soy Líder de Desarrollo en una empresa de manufactura industrial donde diseño software de producción conectando hardware embebido con infraestructura de datos moderna. Me enfoco en construir sistemas confiables que manejan grandes volúmenes de datos de sensores, automatizan flujos de producción y proporcionan información accionable a través de analítica y visualización.",
+            "description": "Entusiasta de la tecnología y estudiante de Ing. Electrónica, me paso la mayor parte del día pensando en computadoras. Desarrollador Fullstack y TL especializado en IoT industrial y telemetría, conectando sistemas embebidos con infraestructura. Me enfoco en diseñar pipelines de ingesta de datos a alta frecuencia, construir sistemas backend confiables y liderar un equipo técnico para entregar soluciones eficientes.",
             "stats": [
                 {
                     "label": "Años de Experiencia Profesional",
@@ -194,33 +218,46 @@
         },
         "skills": {
             "Backend": [
-                "Node.js ",
-                "PostgreSQL",
-                "Redis",
-                "REST APIs",
+                "Typescript",
+                "Python",
+                "RESTful APIs",
                 "WebSockets",
-                "Ingesta de datos"
-            ],
-            "Infraestructura & DevOps": [
-                "Docker",
-                "Docker Compose",
-                "Nginx",
-                "Gitlab CI/CD",
-                "Servidores Linux",
-                "Despliegue VPS",
-                "Pipelines CI/CD"
+                "C (Embebido)",
+                "Node.js"
             ],
             "Frontend": [
                 "React",
-                "ThreeJS",
-                "Dashboards en tiempo real",
-                "Visualización de datos"
+                "TypeScript",
+                "Next.js",
+                "Tailwind CSS",
+                "Three.js"
             ],
-            "Liderazgo": [
-                "Gestión de Equipos Técnicos",
-                "Mentoría de Desarrolladores",
-                "Arquitectura de Diseño de Sistemas",
-                "Alcance y Hoja de Ruta de Proyectos"
+            "AI": [
+                "Context Window Management",
+                "LLM-orchestrated workflows",
+                "Spec declaration / Spec kits"
+            ],
+            "Data & Infrastructure": [
+                "PostgreSQL",
+                "Redis",
+                "MongoDB",
+                "Docker",
+                "Docker Compose",
+                "Nginx",
+                "Administración de Servidores Linux"
+            ],
+            "DevOps & Tools": [
+                "GitLab CI/CD",
+                "Jenkins",
+                "Git",
+                "Bash Scripting",
+                "Grafana"
+            ],
+            "Liderazgo y Trabajo en Equipo": [
+                "Team Leader",
+                "Mentorías",
+                "Agile Workflows",
+                "Gestión de Stakeholders"
             ]
         },
         "projects": [
@@ -255,37 +292,45 @@
         ],
         "experience": [
             {
-                "role": "Líder de Desarrollo",
+                "role": "Lead Developer",
                 "company": "DMD COMPRESORES SAIC",
                 "period": "Feb 2025 — Presente",
                 "bullets": [
-                    "Diseñé la arquitectura de una plataforma de telemetría en tiempo real para sistemas de compresores industriales.",
-                    "Lidero un equipo de 3 desarrolladores diseñando sistemas backend escalables y herramientas internas de producción.",
-                    "Optimizando pipelines de ingesta de datos industriales usando Redis y PostgreSQL.",
-                    "Diseñé y mantuve pipelines de CI/CD y despliegues contenerizados usando Docker y GitLab CI."
+                    "Desarrollando una plataforma para el monitoreo y análisis de datos de equipos industriales de aire comprimido utilizando Node.JS, Typescript, React y TailwindCSS. Team leader en este proyecto.",
+                    "Optimización de flujo de datos utilizando Redis y PostgreSQL manejando cantidades masivas de datos de sensores históricos y de alta frecuencia.",
+                    "Manejo de infraestructura, deployments containerizados y pipelines de CI/CD con GitLab."
                 ]
             },
             {
-                "role": "Desarrollador Fullstack / Sistemas Embebidos / DevOps",
+                "role": "Fullstack / Embedded Systems / DevOps",
                 "company": "DMD COMPRESORES SAIC",
-                "period": "Ene 2024 — Ene 2025",
+                "period": "Ene 2024 — Feb 2025",
                 "bullets": [
-                    "Desarrollé un sistema automatizado de QA para líneas de producción.",
-                    "Diseñé e implementé servicios backend para procesamiento de datos industriales.",
-                    "Diseñé dashboards responsive en tiempo real para visualizar métricas complejas de telemetría industrial.",
-                    "Desarrollé sistemas de adquisición de datos embebidos para compresores industriales.",
-                    "Construí pipelines de CI/CD para testing automatizado y despliegue."
+                    "Desarrollo de plataforma de control de calidad para una linea de producción industrial, conectando PLCs con una aplicación web moderna utilizando ModBus y Node.JS.",
+                    "Implementación de dashboards en tiempo real para visualización de métricas del proceso usando React.",
+                    "Desarrollo de interfaces para conectar sistemas embebidos con infraestructura usando C."
                 ]
             },
             {
-                "role": "Pasantia desarrollador fullstack",
-                "company": "Tech Solutions",
-                "period": "Oct 2023 - Dic 2023",
+                "role": "Internship",
+                "company": "DMD COMPRESORES",
+                "period": "2023",
                 "bullets": [
-                    "Construí y mantuve aplicaciones web escalables usando Node.js y React.",
-                    "Mejoré el rendimiento de la base de datos mediante estrategias de indexación y optimización de queries.",
-                    "Establecí pipelines de CI/CD para la empresa para testing automatizado y despliegue."
+                    "Mantenimiento de aplicaciones web de baja escala usando React y Node.JS.",
+                    "Optimización de base de datos implementando indexación y refactorización de querys, reduciendo significativamente los tiempos de respuesta."
                 ]
+            }
+        ],
+        "education": [
+            {
+                "title": "Ingeniería Electrónica (En curso)",
+                "institution": "Universidad Tecnológica Nacional (UTN)",
+                "period": "2024 – 2029 (Fecha estimada)"
+            },
+            {
+                "title": "Técnico Electrónico",
+                "institution": "E.E.S.T. N°9 Lanús, Buenos Aires",
+                "period": "2017 – 2023"
             }
         ],
         "ui": {
