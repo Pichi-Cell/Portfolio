@@ -1,6 +1,6 @@
 import React, { useRef, Suspense, useState, useEffect } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Float, useGLTF, Center, Environment, ContactShadows } from '@react-three/drei';
+import { Float, useGLTF, Environment, useProgress } from '@react-three/drei';
 import { EffectComposer, Pixelation } from '@react-three/postprocessing';
 import * as THREE from 'three';
 
@@ -79,9 +79,44 @@ const Model = () => {
     );
 };
 
+const ModelLoadingBar = () => {
+    const { active, progress } = useProgress();
+    const [isVisible, setIsVisible] = useState(true);
+    const displayProgress = Math.min(100, Math.max(0, Math.round(progress)));
+
+    useEffect(() => {
+        if (!active && progress >= 100) {
+            const timeout = window.setTimeout(() => setIsVisible(false), 450);
+            return () => window.clearTimeout(timeout);
+        }
+
+        setIsVisible(true);
+        return undefined;
+    }, [active, progress]);
+
+    if (!isVisible) return null;
+
+    return (
+        <div className="pointer-events-none absolute inset-x-6 bottom-10 z-10 flex justify-center md:inset-x-auto md:left-1/2 md:w-72 md:-translate-x-1/2">
+            <div className="w-full max-w-xs rounded-sm border border-emerald-300/25 bg-slate-950/70 px-3 py-2 shadow-lg shadow-emerald-950/30 backdrop-blur-md">
+                <div className="mb-1 flex items-center justify-between text-[10px] font-semibold uppercase tracking-[0.18em] text-emerald-100/80">
+                    <span>Loading model</span>
+                    <span>{displayProgress}%</span>
+                </div>
+                <div className="h-1.5 overflow-hidden rounded-sm bg-slate-800">
+                    <div
+                        className="h-full rounded-sm bg-emerald-400 transition-[width] duration-300 ease-out"
+                        style={{ width: `${displayProgress}%` }}
+                    />
+                </div>
+            </div>
+        </div>
+    );
+};
+
 const HeroCanvas = () => {
     return (
-        <div className="w-full h-full opacity-95">
+        <div className="relative w-full h-full opacity-95">
             <Canvas
                 shadows
                 camera={{ position: [0, 0, 10], fov: 45 }}
@@ -102,6 +137,7 @@ const HeroCanvas = () => {
                     </EffectComposer>
                 </Suspense>
             </Canvas>
+            <ModelLoadingBar />
         </div>
     );
 };
