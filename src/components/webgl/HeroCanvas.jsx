@@ -79,7 +79,7 @@ const Model = () => {
     );
 };
 
-const ModelLoadingBar = () => {
+export const ModelLoadingBar = () => {
     const { active, progress } = useProgress();
     const [isVisible, setIsVisible] = useState(true);
     const displayProgress = Math.min(100, Math.max(0, Math.round(progress)));
@@ -137,7 +137,6 @@ const HeroCanvas = () => {
                     </EffectComposer>
                 </Suspense>
             </Canvas>
-            <ModelLoadingBar />
         </div>
     );
 };

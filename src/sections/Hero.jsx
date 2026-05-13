@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import HeroCanvas from '../components/webgl/HeroCanvas';
+import HeroCanvas, { ModelLoadingBar } from '../components/webgl/HeroCanvas';
 import Badge from '../components/ui/Badge';
 
 const Hero = ({ data, ui }) => {
@@ -53,7 +53,9 @@ const Hero = ({ data, ui }) => {
                 </motion.div>
 
                 {/* This side is purposefully empty to showcase the WebGL object */}
-                <div className="hidden lg:block h-[500px]" />
+                <div className="relative hidden h-[500px] lg:block">
+                    <ModelLoadingBar />
+                </div>
             </div>
         </section>
     );
