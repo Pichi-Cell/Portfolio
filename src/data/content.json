@@ -1,422 +1,385 @@
 {
-    "en": {
-        "profile": {
-            "name": "Lucas Picchi",
-            "title": "Fullstack Engineer | AI",
-            "bio": "Fullstack Developer and Team Lead specializing in AI-driven automation. Connecting embedded systems, infrastructure and intelligent agents. Currently designing high-frequency data ingestion pipelines, LLM-orchestrated workflows and backend systems.",
-            "email": "hello@lpicchi.com",
-            "resumeUrl": "/resume_en.pdf",
-            "interests": [
-                "TypeScript",
-                "Node.js",
-                "PostgreSQL",
-                "Redis",
-                "React",
-                "Next.js",
-                "AI/LLMs",
-                "Agentic Workflows",
-                "IoT"
-            ]
-        },
-        "about": {
-            "description": "Tech enthusiast and Electronic Engineering student, I spend most of my day thinking about computers. Fullstack Developer and Team Lead specializing in AI-driven automation. I focus on connecting embedded systems, infrastructure and intelligent agents, designing high-frequency data ingestion pipelines, LLM-orchestrated workflows, and leading a technical team to deliver efficient solutions.",
-            "stats": [
-                {
-                    "label": "Years of Professional Experience",
-                    "value": "3+"
-                },
-                {
-                    "label": "Years Coding",
-                    "value": "6+"
-                }
-            ]
-        },
-        "skills": {
-            "Backend": [
-                "Typescript",
-                "Python",
-                "RESTful APIs",
-                "WebSockets",
-                "C (Embedded)"
-            ],
-            "Frontend": [
-                "React",
-                "TypeScript",
-                "Next.js",
-                "Tailwind CSS",
-                "Three.js"
-            ],
-            "AI": [
-                "MCP",
-                "Vision Models",
-                "Agentic Workflows",
-                "Context Window Management",
-                "Spec driven development"
-            ],
-            "Data & Infrastructure": [
-                "PostgreSQL",
-                "Redis",
-                "MongoDB",
-                "Docker",
-                "Docker Compose",
-                "Nginx",
-                "Linux Server Administration (On-Premise/Cloud)"
-            ],
-            "DevOps & Tools": [
-                "GitLab CI/CD",
-                "Jenkins",
-                "Git",
-                "Bash Scripting",
-                "Grafana"
-            ],
-            "Leadership & Coworking": [
-                "Team Lead",
-                "Mentorship",
-                "Agile Workflows",
-                "Stakeholder Management"
-            ]
-        },
-        "projects": [
-            {
-                "title": "Vision Electronic Indexing",
-                "description": "A Model Context Protocol (MCP) server that bridges local image processing with Vision Models to automate hardware inventory and extract IC markings from PCB photos using agent-assisted workflows.",
-                "video": "",
-                "tags": [
-                    "Python",
-                    "MCP",
-                    "Cloudflare Workers AI",
-                    "LLMs"
-                ],
-                "links": {
-                    "github": "https://pi.dev/packages/vision-electronic-indexing-pi"
-                }
-            },
-            {
-                "title": "Industrial Telemetry Platform",
-                "description": "Real-time monitoring system for industrial compressors, featuring high-frequency data ingestion and live performance visualization.",
-                "video": "/telemetry_video.mkv",
-                "tags": [
-                    "Node.js",
-                    "Redis",
-                    "PostgreSQL",
-                    "Docker"
-                ],
-                "links": {
-                    "live": "#contact"
-                }
-            },
-            {
-                "title": "Kanban VFD Repair shop CRM",
-                "description": "CRM for a repair shop, with a kanban board to handle issues, integration with legacy SMB and MAIL servers, docker-compose deployment and easy setup via a WEB GUI.",
-                "video": "/crm_video.mkv",
-                "tags": [
-                    "Node.js",
-                    "Docker",
-                    "PostgreSQL"
-                ],
-                "links": {
-                    "github": "https://github.com/Pichi-Cell/VFD-Management",
-                    "live": "#contact"
-                }
-            }
-        ],
-        "experience": [
-            {
-                "role": "Lead Developer",
-                "company": "DMD COMPRESORES SAIC",
-                "period": "Feb 2025 — Present",
-                "bullets": [
-                    "Developing an end-to-end real-time telemetry platform for industrial compressor monitoring and data visualization using Node.JS, Typescript, React and TailwindCSS. Worked as team leader in this project.",
-                    "Optimized data pipelines using Redis and PostgreSQL to handle massive historical datasets and high-frequency sensor ingestion without performance degradation.",
-                    "Managed Infrastructure, deploying containerized applications and automated CI/CD pipelines with agentic automations via GitLab."
-                ]
-            },
-            {
-                "role": "R&D Collaborator – Embedded Systems Lab",
-                "company": "Universidad Tecnológica Nacional (UTN)",
-                "period": "June 2026 — Present",
-                "bullets": [
-                    "Conducting research and development at the intersection of embedded systems and applied AI.",
-                    "Developed Vision Electronic Indexing (published open-source as a Pi extension), a Model Context Protocol (MCP) server that bridges local image processing with Cloudflare Workers AI to automate hardware inventory.",
-                    "Designed an agent-assisted workflow that extracts IC markings from PCB photos and orchestrates LLMs to verify and enrich inventory data via web-searched datasheets, transitioning unstructured image data into structured CSV reports."
-                ]
-            },
-            {
-                "role": "Fullstack / Embedded",
-                "company": "DMD COMPRESORES SAIC",
-                "period": "Jan 2024 — Feb 2025",
-                "bullets": [
-                    "Developed an automated testing system for production lines connecting industrial equipment and PLCs to a modern web application using ModBus communication with Node.JS.",
-                    "Implemented real-time dashboards featuring complex data visualizations for industrial metrics using React.",
-                    "Developed embedded acquisition systems to interface hardware sensors with backend services using C."
-                ]
-            },
-            {
-                "role": "Internship",
-                "company": "DMD COMPRESORES",
-                "period": "2023",
-                "bullets": [
-                    "Maintained low scale web applications using Node.js and React.",
-                    "Optimized database performance through indexing and query refactoring, significantly reducing API response times."
-                ]
-            }
-        ],
-        "education": [
-            {
-                "title": "Electronic Engineering (In Progress)",
-                "institution": "Universidad Tecnológica Nacional (UTN)",
-                "period": "2024 – 2029 (Expected)"
-            },
-            {
-                "title": "Technical High School in Electronics",
-                "institution": "E.E.S.T. N°9 Lanús, Buenos Aires",
-                "period": "2017 – 2023"
-            }
-        ],
-        "ui": {
-            "nav": {
-                "portfolio": "Portfolio",
-                "skills": "Skills",
-                "experience": "Experience",
-                "contact": "Contact"
-            },
-            "hero": {
-                "greeting": "I'm"
-            },
-            "about": {
-                "heading": "About",
-                "headingAccent": "Me",
-                "cvTitle": "Curriculum Vitae",
-                "cvSubtitle": "Download my full professional history",
-                "cvButton": "Download Resume"
-            },
-            "portfolio": {
-                "heading": "Featured Projects",
-                "subtitle": "A selection of recent work focusing on production ready applications.",
-                "demoButton": "Book a Demo"
-            },
-            "skills": {
-                "heading": "Core Competencies",
-                "subtitle": "Domain-specific expertise acquired through over a decade of hands-on engineering and leadership."
-            },
-            "experience": {
-                "heading": "Professional Timeline",
-                "subtitle": "Milestones of growth, leadership, and technical impact."
-            },
-            "contact": {
-                "heading": "Let's Build Something Together",
-                "subtitle": "Currently exploring new opportunities and challenges. Reach out if you're looking for a developer with true passion for his work."
-            }
-        }
+  "en": {
+    "profile": {
+      "name": "Lucas Picchi",
+      "title": "Fullstack Engineer | AI",
+      "bio": "Fullstack Developer and Team Lead specializing in AI-driven automation. Connecting embedded systems, infrastructure and intelligent agents. Currently designing high-frequency data ingestion pipelines, LLM-orchestrated workflows and backend systems.",
+      "email": "hello@lpicchi.com",
+      "resumeUrl": "/resume_en.pdf",
+      "interests": [
+        "TypeScript",
+        "Node.js",
+        "PostgreSQL",
+        "Redis",
+        "React",
+        "Next.js",
+        "AI/LLMs",
+        "Agentic Workflows",
+        "IoT"
+      ]
     },
-    "es": {
-        "profile": {
-            "name": "Lucas Picchi",
-            "title": "Ingeniero Fullstack | IA",
-            "bio": "Desarrollador Fullstack y TL especializado en automatización impulsada por IA. Conectando sistemas embebidos, infraestructura y agentes inteligentes. Actualmente diseñando pipelines de ingesta de datos de alta frecuencia, flujos de trabajo orquestados por LLMs y sistemas de backend.",
-            "email": "hello@lpicchi.com",
-            "resumeUrl": "/resume_es.pdf",
-            "interests": [
-                "TypeScript",
-                "Node.js",
-                "PostgreSQL",
-                "Redis",
-                "React",
-                "Next.js",
-                "AI/LLMs",
-                "Agentic Workflows",
-                "IoT"
-            ]
+    "about": {
+      "description": "Tech enthusiast and Electronic Engineering student, I spend most of my day thinking about computers. Fullstack Developer and Team Lead specializing in AI-driven automation. I focus on connecting embedded systems, infrastructure and intelligent agents, designing high-frequency data ingestion pipelines, LLM-orchestrated workflows, and leading a technical team to deliver efficient solutions.",
+      "stats": [
+        {
+          "label": "Years of Professional Experience",
+          "value": "3+"
         },
-        "about": {
-            "description": "Entusiasta de la tecnología y estudiante de Ing. Electrónica, me paso la mayor parte del día pensando en computadoras. Desarrollador Fullstack especializado en automatización impulsada por IA. Me enfoco en conectar sistemas embebidos, infraestructura y agentes inteligentes, diseñando pipelines de ingesta de datos de alta frecuencia, construyendo sistemas backend confiables y liderando un equipo técnico para entregar soluciones eficientes.",
-            "stats": [
-                {
-                    "label": "Años de Experiencia Profesional",
-                    "value": "3+"
-                },
-                {
-                    "label": "Años Programando",
-                    "value": "6+"
-                }
-            ]
-        },
-        "skills": {
-            "Backend": [
-                "Typescript",
-                "Python",
-                "RESTful APIs",
-                "WebSockets",
-                "C (Embebido)"
-            ],
-            "Frontend": [
-                "React",
-                "TypeScript",
-                "Next.js",
-                "Tailwind CSS",
-                "Three.js"
-            ],
-            "AI": [
-                "MCP",
-                "Vision Models",
-                "Agentic Workflows",
-                "Context Window Management",
-                "Spec driven development"
-            ],
-            "Data & Infrastructure": [
-                "PostgreSQL",
-                "Redis",
-                "MongoDB",
-                "Docker",
-                "Docker Compose",
-                "Nginx",
-                "Administración de Servidores Linux (On-Premise/Cloud)"
-            ],
-            "DevOps & Tools": [
-                "GitLab CI/CD",
-                "Jenkins",
-                "Git",
-                "Bash Scripting",
-                "Grafana"
-            ],
-            "Liderazgo y Trabajo en Equipo": [
-                "Team Leader",
-                "Mentorías",
-                "Agile Workflows",
-                "Gestión de Stakeholders"
-            ]
-        },
-        "projects": [
-            {
-                "title": "Vision Electronic Indexing",
-                "description": "Servidor MCP (Model Context Protocol) que conecta el procesamiento local de imágenes con Modelos de Visión para automatizar el inventario de hardware y extraer marcas de IC de fotos de PCB mediante flujos de trabajo orquestados por agentes.",
-                "video": "",
-                "tags": [
-                    "Python",
-                    "MCP",
-                    "Cloudflare Workers AI",
-                    "LLMs"
-                ],
-                "links": {
-                    "github": "https://pi.dev/packages/vision-electronic-indexing-pi"
-                }
-            },
-            {
-                "title": "Plataforma de Telemetría Industrial",
-                "description": "Sistema de monitoreo en tiempo real para compresores industriales, con ingesta de datos a alta frecuencia y visualización de rendimiento en vivo.",
-                "video": "/telemetry_video.mkv",
-                "tags": [
-                    "Node.js",
-                    "Redis",
-                    "PostgreSQL",
-                    "Docker"
-                ],
-                "links": {
-                    "live": "#contact"
-                }
-            },
-            {
-                "title": "CRM Kanban para Taller de Reparación de VFD",
-                "description": "CRM para un taller de reparación, con tablero kanban para gestionar incidencias, integración con servidores SMB y MAIL legacy, despliegue con docker-compose y configuración sencilla vía una GUI WEB.",
-                "video": "/crm_video.mkv",
-                "tags": [
-                    "Node.js",
-                    "Docker",
-                    "PostgreSQL"
-                ],
-                "links": {
-                    "github": "https://github.com/Pichi-Cell/VFD-Management",
-                    "live": "#contact"
-                }
-            }
-        ],
-        "experience": [
-            {
-                "role": "Lead Developer",
-                "company": "DMD COMPRESORES SAIC",
-                "period": "Feb 2025 — Presente",
-                "bullets": [
-                    "Desarrollando una plataforma de telemetría de extremo a extremo en tiempo real para el monitoreo de compresores industriales y análisis de datos utilizando Node.JS, Typescript, React y TailwindCSS. Trabajé como líder de equipo en este proyecto.",
-                    "Optimización de flujos de datos utilizando Redis y PostgreSQL para manejar conjuntos masivos de datos históricos e ingesta de sensores de alta frecuencia sin degradación del rendimiento.",
-                    "Manejo de infraestructura, despliegues de aplicaciones en contenedores y pipelines de CI/CD automatizados con automatizaciones agénticas vía GitLab."
-                ]
-            },
-            {
-                "role": "Colaborador de I+D – Laboratorio de Sistemas Embebidos",
-                "company": "Universidad Tecnológica Nacional (UTN)",
-                "period": "Junio 2026 — Presente",
-                "bullets": [
-                    "Realizando investigación y desarrollo en la intersección de sistemas embebidos e IA aplicada.",
-                    "Desarrollo de Vision Electronic Indexing (publicado de código abierto como una extensión de Pi), un servidor del Protocolo de Contexto de Modelos (MCP) que conecta el procesamiento de imágenes local con Cloudflare Workers AI para automatizar el inventario de hardware.",
-                    "Diseño de un flujo de trabajo asistido por agentes que extrae marcas de circuitos integrados (IC) de fotos de PCB y orquesta LLMs para verificar y enriquecer datos de inventario a través de hojas de datos buscadas en la web, transformando datos de imágenes no estructurados en reportes CSV estructurados."
-                ]
-            },
-            {
-                "role": "Fullstack / Sistemas Embebidos",
-                "company": "DMD COMPRESORES SAIC",
-                "period": "Ene 2024 — Feb 2025",
-                "bullets": [
-                    "Desarrollo de un sistema de pruebas automatizado para líneas de producción conectando equipos industriales y PLCs a una aplicación web moderna utilizando comunicación ModBus con Node.JS.",
-                    "Implementación de dashboards en tiempo real para visualización de datos complejos y métricas industriales usando React.",
-                    "Desarrollo de sistemas de adquisición embebidos para conectar sensores de hardware con servicios de backend usando C."
-                ]
-            },
-            {
-                "role": "Internship",
-                "company": "DMD COMPRESORES",
-                "period": "2023",
-                "bullets": [
-                    "Mantenimiento de aplicaciones web de baja escala usando React y Node.JS.",
-                    "Optimización del rendimiento de bases de datos mediante indexación y refactorización de querys, reduciendo significativamente los tiempos de respuesta de la API."
-                ]
-            }
-        ],
-        "education": [
-            {
-                "title": "Ingeniería Electrónica (En curso)",
-                "institution": "Universidad Tecnológica Nacional (UTN)",
-                "period": "2024 – 2029 (Fecha estimada)"
-            },
-            {
-                "title": "Técnico Electrónico",
-                "institution": "E.E.S.T. N°9 Lanús, Buenos Aires",
-                "period": "2017 – 2023"
-            }
-        ],
-        "ui": {
-            "nav": {
-                "portfolio": "Proyectos",
-                "skills": "Habilidades",
-                "experience": "Experiencia",
-                "contact": "Contacto"
-            },
-            "hero": {
-                "greeting": "Soy"
-            },
-            "about": {
-                "heading": "Sobre",
-                "headingAccent": "Mí",
-                "cvTitle": "Curriculum Vitae",
-                "cvSubtitle": "Descargá mi historial profesional completo",
-                "cvButton": "Descargar CV"
-            },
-            "portfolio": {
-                "heading": "Proyectos Destacados",
-                "subtitle": "Una selección de trabajos recientes enfocados en aplicaciones listas para producción.",
-                "demoButton": "Agendar una Demo"
-            },
-            "skills": {
-                "heading": "Competencias Principales",
-                "subtitle": "Experiencia específica de dominio adquirida a través de más de una década de ingeniería práctica y liderazgo."
-            },
-            "experience": {
-                "heading": "Línea de Tiempo Profesional",
-                "subtitle": "Hitos de crecimiento, liderazgo e impacto técnico."
-            },
-            "contact": {
-                "heading": "Trabajemos Juntos",
-                "subtitle": "Actualmente explorando nuevas oportunidades y desafíos. Contactame si buscás un desarrollador con verdadera pasión por su trabajo."
-            }
+        {
+          "label": "Years Coding",
+          "value": "6+"
         }
+      ]
+    },
+    "skills": {
+      "Backend": [
+        "Typescript",
+        "Python",
+        "RESTful APIs",
+        "WebSockets",
+        "C (Embedded)"
+      ],
+      "Frontend": [
+        "React",
+        "TypeScript",
+        "Next.js",
+        "Tailwind CSS",
+        "Three.js"
+      ],
+      "AI": [
+        "MCP",
+        "Vision Models",
+        "Agentic Workflows",
+        "Context Window Management",
+        "Spec driven development"
+      ],
+      "Data & Infrastructure": [
+        "PostgreSQL",
+        "Redis",
+        "MongoDB",
+        "Docker",
+        "Docker Compose",
+        "Nginx",
+        "Linux Server Administration (On-Premise/Cloud)"
+      ],
+      "DevOps & Tools": [
+        "GitLab CI/CD",
+        "Jenkins",
+        "Git",
+        "Bash Scripting",
+        "Grafana"
+      ],
+      "Leadership & Coworking": [
+        "Team Lead",
+        "Mentorship",
+        "Agile Workflows",
+        "Stakeholder Management"
+      ]
+    },
+    "projects": [
+      {
+        "title": "Vision Electronic Indexing",
+        "description": "A Model Context Protocol (MCP) server that bridges local image processing with Vision Models to automate hardware inventory and extract IC markings from PCB photos using agent-assisted workflows.",
+        "video": "",
+        "tags": ["Python", "MCP", "Cloudflare Workers AI", "LLMs"],
+        "links": {
+          "github": "https://pi.dev/packages/vision-electronic-indexing-pi"
+        }
+      },
+      {
+        "title": "Industrial Telemetry Platform",
+        "description": "Real-time monitoring system for industrial compressors, featuring high-frequency data ingestion and live performance visualization.",
+        "video": "/telemetry_video.mkv",
+        "tags": ["Node.js", "Redis", "PostgreSQL", "Docker"],
+        "links": {
+          "live": "#contact"
+        }
+      },
+      {
+        "title": "Kanban VFD Repair shop CRM",
+        "description": "CRM for a repair shop, with a kanban board to handle issues, integration with legacy SMB and MAIL servers, docker-compose deployment and easy setup via a WEB GUI.",
+        "video": "/crm_video.mkv",
+        "tags": ["Node.js", "Docker", "PostgreSQL"],
+        "links": {
+          "github": "https://github.com/Pichi-Cell/VFD-Management",
+          "live": "#contact"
+        }
+      }
+    ],
+    "experience": [
+      {
+        "role": "Lead Developer",
+        "company": "DMD COMPRESORES SAIC",
+        "period": "Feb 2025 — Present",
+        "bullets": [
+          "Developing an end-to-end real-time telemetry platform for industrial compressor monitoring and data visualization using Node.JS, Typescript, React and TailwindCSS. Worked as team leader in this project.",
+          "Optimized data pipelines using Redis and PostgreSQL to handle massive historical datasets and high-frequency sensor ingestion without performance degradation.",
+          "Managed Infrastructure, deploying containerized applications and automated CI/CD pipelines with agentic automations via GitLab."
+        ]
+      },
+      {
+        "role": "R&D Collaborator – Embedded Systems Lab",
+        "company": "Universidad Tecnológica Nacional (UTN)",
+        "period": "June 2026 — Present",
+        "bullets": [
+          "Conducting research and development at the intersection of embedded systems and applied AI.",
+          "Developed Vision Electronic Indexing (published open-source as a Pi extension), a Model Context Protocol (MCP) server that bridges local image processing with Cloudflare Workers AI to automate hardware inventory.",
+          "Designed an agent-assisted workflow that extracts IC markings from PCB photos and orchestrates LLMs to verify and enrich inventory data via web-searched datasheets, transitioning unstructured image data into structured CSV reports."
+        ]
+      },
+      {
+        "role": "Fullstack / Embedded",
+        "company": "DMD COMPRESORES SAIC",
+        "period": "Jan 2024 — Feb 2025",
+        "bullets": [
+          "Developed an automated testing system for production lines connecting industrial equipment and PLCs to a modern web application using ModBus communication with Node.JS.",
+          "Implemented real-time dashboards featuring complex data visualizations for industrial metrics using React.",
+          "Developed embedded acquisition systems to interface hardware sensors with backend services using C."
+        ]
+      },
+      {
+        "role": "Internship",
+        "company": "DMD COMPRESORES",
+        "period": "2023",
+        "bullets": [
+          "Maintained low scale web applications using Node.js and React.",
+          "Optimized database performance through indexing and query refactoring, significantly reducing API response times."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "title": "Electronic Engineering (In Progress)",
+        "institution": "Universidad Tecnológica Nacional (UTN)",
+        "period": "2024 – 2029 (Expected)"
+      },
+      {
+        "title": "Technical High School in Electronics",
+        "institution": "E.E.S.T. N°9 Lanús, Buenos Aires",
+        "period": "2017 – 2023"
+      }
+    ],
+    "ui": {
+      "nav": {
+        "portfolio": "Portfolio",
+        "skills": "Skills",
+        "experience": "Experience",
+        "contact": "Contact"
+      },
+      "hero": {
+        "greeting": "I'm"
+      },
+      "about": {
+        "heading": "About",
+        "headingAccent": "Me",
+        "cvTitle": "Curriculum Vitae",
+        "cvSubtitle": "Download my full professional history",
+        "cvButton": "Download Resume"
+      },
+      "portfolio": {
+        "heading": "Featured Projects",
+        "subtitle": "A selection of recent work focusing on production ready applications.",
+        "demoButton": "Book a Demo"
+      },
+      "skills": {
+        "heading": "Core Competencies",
+        "subtitle": "Domain-specific expertise acquired through over a decade of hands-on engineering and leadership."
+      },
+      "experience": {
+        "heading": "Professional Timeline",
+        "subtitle": "Milestones of growth, leadership, and technical impact."
+      },
+      "contact": {
+        "heading": "Let's Build Something Together",
+        "subtitle": "Currently exploring new opportunities and challenges. Reach out if you're looking for a developer with true passion for his work."
+      }
     }
+  },
+  "es": {
+    "profile": {
+      "name": "Lucas Picchi",
+      "title": "Desarrollador Fullstack | IA",
+      "bio": "Desarrollador Fullstack especializado en automatización impulsada por IA. Conectando sistemas embebidos, infraestructura y agentes de IA. Actualmente diseñando pipelines de ingesta de datos de alta frecuencia, flujos de trabajo orquestados por LLMs y sistemas de backend.",
+      "email": "hello@lpicchi.com",
+      "resumeUrl": "/resume_es.pdf",
+      "interests": [
+        "TypeScript",
+        "Node.js",
+        "PostgreSQL",
+        "Redis",
+        "React",
+        "Next.js",
+        "AI/LLMs",
+        "Agentic Workflows",
+        "C"
+      ]
+    },
+    "about": {
+      "description": "Entusiasta de la tecnología y estudiante de Ing. Electrónica. Desarrollador Fullstack especializado en automatización impulsada por IA. Colaborador del laboratorio de sistemas embebidos de la UTN FRA. me paso la mayor parte del día pensando en computadoras.",
+      "stats": [
+        {
+          "label": "Años de Experiencia Profesional",
+          "value": "3+"
+        },
+        {
+          "label": "Años Programando",
+          "value": "6+"
+        }
+      ]
+    },
+    "skills": {
+      "Backend": [
+        "Typescript",
+        "Python",
+        "RESTful APIs",
+        "WebSockets",
+        "C (Embebido)"
+      ],
+      "Frontend": [
+        "React",
+        "TypeScript",
+        "Next.js",
+        "Tailwind CSS",
+        "Three.js"
+      ],
+      "AI": [
+        "MCP",
+        "Vision Models",
+        "Agentic Workflows",
+        "Context Window Management",
+        "Spec driven development"
+      ],
+      "Data & Infrastructure": [
+        "PostgreSQL",
+        "Redis",
+        "MongoDB",
+        "Docker",
+        "Docker Compose",
+        "Nginx",
+        "Administración de Servidores Linux (On-Premise/Cloud)"
+      ],
+      "DevOps & Tools": [
+        "GitLab CI/CD",
+        "Jenkins",
+        "Git",
+        "Bash Scripting",
+        "Grafana"
+      ],
+      "Liderazgo y Trabajo en Equipo": [
+        "Team Leader",
+        "Mentorías",
+        "Agile Workflows",
+        "Gestión de Stakeholders"
+      ]
+    },
+    "projects": [
+      {
+        "title": "Vision Electronic Indexing",
+        "description": "Servidor MCP (Model Context Protocol) que conecta el procesamiento local de imágenes con Modelos de Visión para automatizar el inventario de hardware y extraer marcas de IC de fotos de PCB mediante flujos de trabajo orquestados por agentes.",
+        "video": "",
+        "tags": ["Python", "MCP", "Cloudflare Workers AI", "LLMs"],
+        "links": {
+          "github": "https://github.com/Pichi-Cell/vision-electronic-indexing",
+          "live": "https://pi.dev/packages/vision-electronic-indexing-pi"
+        }
+      },
+      {
+        "title": "Plataforma de Telemetría Industrial",
+        "description": "Sistema de monitoreo en tiempo real para compresores industriales, con ingesta de datos a alta frecuencia y visualización de rendimiento en vivo.",
+        "video": "/telemetry_video.mkv",
+        "tags": ["Node.js", "Redis", "PostgreSQL", "Docker"],
+        "links": {
+          "live": "#contact"
+        }
+      }
+    ],
+    "experience": [
+      {
+        "role": "Lead Developer",
+        "company": "DMD COMPRESORES SAIC",
+        "period": "Feb 2025 — Presente",
+        "bullets": [
+          "Desarrollando una plataforma de telemetría de extremo a extremo en tiempo real para el monitoreo de compresores industriales y análisis de datos utilizando Node.JS, Typescript, React y TailwindCSS. Trabajé como líder de equipo en este proyecto.",
+          "Optimización de flujos de datos utilizando Redis y PostgreSQL para manejar conjuntos masivos de datos históricos e ingesta de sensores de alta frecuencia sin degradación del rendimiento.",
+          "Manejo de infraestructura, despliegues de aplicaciones en contenedores y pipelines de CI/CD automatizados con automatizaciones agénticas vía GitLab."
+        ]
+      },
+      {
+        "role": "Colaborador de I+D - Laboratorio de Sistemas Embebidos",
+        "company": "Universidad Tecnológica Nacional (UTN)",
+        "period": "Junio 2026 — Presente",
+        "bullets": [
+          "Realizando investigación y desarrollo en la intersección de sistemas embebidos e IA aplicada.",
+          "Desarrollo de Vision Electronic Indexing (publicado de código abierto como una extensión de Pi), un servidor del Protocolo de Contexto de Modelos (MCP) que conecta el procesamiento de imágenes local con Cloudflare Workers AI para automatizar el inventario de hardware.",
+          "Diseño de un flujo de trabajo asistido por agentes que extrae códigos de circuitos integrados (IC) de fotos y orquesta LLMs para verificar y enriquecer datos de inventario a través de hojas de datos buscadas en la web, transformando datos de imágenes no estructurados en reportes CSV."
+        ]
+      },
+      {
+        "role": "Fullstack / Sistemas Embebidos",
+        "company": "DMD COMPRESORES SAIC",
+        "period": "Ene 2024 — Feb 2025",
+        "bullets": [
+          "Desarrollo de un sistema de pruebas automatizado para líneas de producción conectando equipos industriales y PLCs a una aplicación web moderna utilizando comunicación ModBus con Node.JS.",
+          "Implementación de dashboards en tiempo real para visualización de datos complejos y métricas industriales usando React.",
+          "Desarrollo de sistemas de adquisición embebidos para conectar sensores de hardware con servicios de backend usando C."
+        ]
+      },
+      {
+        "role": "Internship",
+        "company": "DMD COMPRESORES",
+        "period": "2023",
+        "bullets": [
+          "Mantenimiento de aplicaciones web de baja escala usando React y Node.JS.",
+          "Optimización del rendimiento de bases de datos mediante indexación y refactorización de querys, reduciendo significativamente los tiempos de respuesta de la API."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "title": "Ingeniería Electrónica (En curso)",
+        "institution": "Universidad Tecnológica Nacional (UTN)",
+        "period": "2024 – 2029 (Fecha estimada)"
+      },
+      {
+        "title": "Técnico Electrónico",
+        "institution": "E.E.S.T. N°9 Lanús, Buenos Aires",
+        "period": "2017 – 2023"
+      }
+    ],
+    "ui": {
+      "nav": {
+        "portfolio": "Proyectos",
+        "skills": "Habilidades",
+        "experience": "Experiencia",
+        "contact": "Contacto"
+      },
+      "hero": {
+        "greeting": "Soy"
+      },
+      "about": {
+        "heading": "Sobre",
+        "headingAccent": "Mí",
+        "cvTitle": "Curriculum Vitae",
+        "cvSubtitle": "Descargá mi historial profesional completo",
+        "cvButton": "Descargar CV"
+      },
+      "portfolio": {
+        "heading": "Proyectos Destacados",
+        "subtitle": "Una selección de trabajos recientes enfocados en aplicaciones listas para producción.",
+        "demoButton": "Agendar una Demo"
+      },
+      "skills": {
+        "heading": "Competencias Principales",
+        "subtitle": "Experiencia específica de dominio adquirida a través de más de una década de ingeniería práctica y liderazgo."
+      },
+      "experience": {
+        "heading": "Línea de Tiempo Profesional",
+        "subtitle": "Hitos de crecimiento, liderazgo e impacto técnico."
+      },
+      "contact": {
+        "heading": "Trabajemos Juntos",
+        "subtitle": "Actualmente explorando nuevas oportunidades y desafíos. Contactame si buscás un desarrollador con verdadera pasión por su trabajo."
+      }
+    }
+  }
 }
