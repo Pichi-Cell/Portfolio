@@ -91,7 +91,8 @@
         "title": "Industrial Telemetry Platform",
         "description": "Real-time monitoring system for industrial compressors, featuring high-frequency data ingestion and live performance visualization.",
         "video": "/telemetry_video.mkv",
-        "tags": ["Node.js", "Redis", "PostgreSQL", "Docker"]
+        "tags": ["Node.js", "Redis", "PostgreSQL", "Docker"],
+        "links": {}
       }
     ],
     "experience": [
@@ -275,7 +276,8 @@
         "title": "Plataforma de Telemetría Industrial",
         "description": "Sistema de monitoreo en tiempo real para compresores industriales, con ingesta de datos a alta frecuencia y visualización de rendimiento en vivo.",
         "video": "/telemetry_video.mkv",
-        "tags": ["Node.js", "Redis", "PostgreSQL", "Docker"]
+        "tags": ["Node.js", "Redis", "PostgreSQL", "Docker"],
+        "links": {}
       }
     ],
     "experience": [
