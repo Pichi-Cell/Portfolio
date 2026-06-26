@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucas Picchi | Portfolio</title>
+
+    <style>
+      /* Center the video on the screen */
+      #root {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 2rem; /* Keeps it from touching the edges on mobile */
+      }
+
+      /* Style the video player beautifully */
+      #root video {
+        width: 100%;
+        max-width: 900px; /* Prevents it from getting too massive on large monitors */
+        border-radius: 1rem; /* Smooth rounded corners */
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7); /* Deep drop shadow */
+        border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle glowing border effect */
+        background-color: #000; /* Hides any weird loading flashes */
+      }
+    </style>
+  </head>
+
+  <body class="bg-slate-950 text-slate-50 selection:bg-emerald-500/30">
+    <div id="root">
+      <video src="./video.mp4" controls></video>
+    </div>
+  </body>
+</html>
