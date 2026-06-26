@@ -80,7 +80,7 @@
       {
         "title": "Vision Electronic Indexing",
         "description": "Model Context Protocol (MCP) server that bridges local image processing with Vision Models to automate hardware inventory and extract IC markings from PCB photos using agent-assisted workflows.",
-        "video": "",
+        "video": "/video_vision.mp4",
         "tags": ["Python", "MCP", "Cloudflare Workers AI", "LLMs"],
         "links": {
           "github": "https://github.com/Pichi-Cell/vision-electronic-indexing",
@@ -265,7 +265,7 @@
       {
         "title": "Vision Electronic Indexing",
         "description": "Servidor MCP (Model Context Protocol) que conecta el procesamiento local de imágenes con Modelos de Visión para automatizar el inventario de hardware y extraer marcas de IC de fotos de PCB mediante flujos de trabajo orquestados por agentes.",
-        "video": "",
+        "video": "/video_vision.mp4",
         "tags": ["Python", "MCP", "Cloudflare Workers AI", "LLMs"],
         "links": {
           "github": "https://github.com/Pichi-Cell/vision-electronic-indexing",
