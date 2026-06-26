@@ -91,10 +91,7 @@
         "title": "Industrial Telemetry Platform",
         "description": "Real-time monitoring system for industrial compressors, featuring high-frequency data ingestion and live performance visualization.",
         "video": "/telemetry_video.mkv",
-        "tags": ["Node.js", "Redis", "PostgreSQL", "Docker"],
-        "links": {
-          "live": "#contact"
-        }
+        "tags": ["Node.js", "Redis", "PostgreSQL", "Docker"]
       }
     ],
     "experience": [
@@ -170,7 +167,7 @@
       "portfolio": {
         "heading": "Featured Projects",
         "subtitle": "A selection of recent work focusing on production ready applications.",
-        "demoButton": "Book a Demo"
+        "demoButton": "Pi Catalog"
       },
       "skills": {
         "heading": "Core Competencies",
@@ -278,10 +275,7 @@
         "title": "Plataforma de Telemetría Industrial",
         "description": "Sistema de monitoreo en tiempo real para compresores industriales, con ingesta de datos a alta frecuencia y visualización de rendimiento en vivo.",
         "video": "/telemetry_video.mkv",
-        "tags": ["Node.js", "Redis", "PostgreSQL", "Docker"],
-        "links": {
-          "live": "#contact"
-        }
+        "tags": ["Node.js", "Redis", "PostgreSQL", "Docker"]
       }
     ],
     "experience": [
@@ -357,7 +351,7 @@
       "portfolio": {
         "heading": "Proyectos Destacados",
         "subtitle": "Una selección de trabajos recientes enfocados en aplicaciones listas para producción.",
-        "demoButton": "Agendar una Demo"
+        "demoButton": "Paquete para Pi"
       },
       "skills": {
         "heading": "Competencias Principales",
