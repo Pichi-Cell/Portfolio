@@ -13,13 +13,12 @@ const AppContent = () => {
     const t = content[lang];
 
     return (
-        <div className="relative min-h-screen overflow-hidden bg-[#F4F1EA] text-[#3E2723]">
+        <div className="relative min-h-screen overflow-hidden bg-transparent text-[#3E2723]">
             <ScrollNavbar ui={t.ui} />
 
             <main>
                 <Hero
                     data={t.profile}
-                    stats={t.about.stats}
                     resumeUrl={t.profile.resumeUrl}
                     ui={{ ...t.ui.hero, cvButton: t.ui.about.cvButton }}
                 />

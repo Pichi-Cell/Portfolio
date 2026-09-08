@@ -6,7 +6,7 @@
 
 :root {
   color: #3E2723;
-  background: #F4F1EA;
+  background: #d2bea2;
   font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-synthesis: none;
   text-rendering: geometricPrecision;
@@ -16,7 +16,7 @@
 
 html {
   scroll-behavior: smooth;
-  background: #F4F1EA;
+  background: #d2bea2;
 }
 
 body {
@@ -25,8 +25,11 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   background:
-    radial-gradient(circle at top left, rgba(161, 136, 127, 0.18), transparent 34rem),
-    linear-gradient(135deg, #F9F8F6 0%, #F4F1EA 58%, #EDE7DC 100%);
+    radial-gradient(circle at 16% 8%, rgba(248, 236, 215, 0.42), transparent 28rem),
+    radial-gradient(circle at 86% 18%, rgba(222, 208, 184, 0.38), transparent 34rem),
+    radial-gradient(circle at 20% 92%, rgba(93, 64, 55, 0.12), transparent 32rem),
+    linear-gradient(135deg, #d2bea2 0%, #d8c6aa 38%, #ded0b7 100%);
+  background-attachment: fixed;
 }
 
 body::before {

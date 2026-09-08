@@ -14,23 +14,23 @@ const ScrollNavbar = ({ ui }) => {
     ];
 
     return (
-        <header className="fixed left-0 right-0 top-4 z-40 px-4">
+        <header className="fixed left-0 right-0 top-0 z-40">
             <motion.nav
                 initial={{ opacity: 0, y: -16 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.45, ease: 'easeOut' }}
-                className="mx-auto flex max-w-5xl items-center justify-between rounded-full border border-[#5D4037]/20 bg-[#F4F1EA]/85 px-4 py-3 shadow-[0_12px_50px_rgba(62,39,35,0.08)] backdrop-blur-md md:px-6"
+                className="flex w-full items-center justify-between border-b border-[#5D4037]/10 bg-[#d2bea2]/35 px-5 py-4 backdrop-blur-[2px] md:px-8"
             >
-                <a href="#" className="font-serif text-2xl font-medium tracking-[-0.04em] text-[#3E2723]">
+                <a href="#" className="font-serif text-2xl font-semibold tracking-[-0.04em] text-[#3E2723]/80 transition hover:text-[#3E2723]">
                     Lucas
                 </a>
 
-                <div className="hidden items-center gap-7 md:flex">
+                <div className="hidden items-center gap-6 md:flex">
                     {navLinks.map((link) => (
                         <a
                             key={link.href}
                             href={link.href}
-                            className="font-mono text-[11px] uppercase tracking-[0.22em] text-[#5D4037] transition hover:text-[#3E2723]"
+                            className="font-mono text-[11px] font-semibold uppercase tracking-[0.2em] text-[#5D4037]/75 transition hover:text-[#3E2723]"
                         >
                             {link.name}
                         </a>
@@ -42,7 +42,7 @@ const ScrollNavbar = ({ ui }) => {
                     <LanguageSwitcher />
                     <button
                         type="button"
-                        className="rounded-full border border-[#5D4037]/20 p-2 text-[#3E2723] transition hover:bg-[#E9E0D2]"
+                        className="rounded-full p-2 text-[#3E2723]/80 transition hover:bg-[#E9E0D2]/55 hover:text-[#3E2723]"
                         onClick={() => setIsMobileMenuOpen((open) => !open)}
                         aria-label="Toggle navigation"
                         aria-expanded={isMobileMenuOpen}
@@ -59,14 +59,14 @@ const ScrollNavbar = ({ ui }) => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.2 }}
-                        className="mx-auto mt-3 flex max-w-5xl flex-col gap-2 rounded-3xl border border-[#5D4037]/20 bg-[#F4F1EA]/95 p-4 shadow-[0_18px_60px_rgba(62,39,35,0.1)] backdrop-blur-md md:hidden"
+                        className="mt-2 flex w-full flex-col gap-1 border-b border-[#5D4037]/15 bg-[#d2bea2]/90 p-4 backdrop-blur-md md:hidden"
                     >
                         {navLinks.map((link) => (
                             <a
                                 key={link.href}
                                 href={link.href}
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="rounded-2xl px-4 py-3 font-mono text-xs uppercase tracking-[0.2em] text-[#5D4037] transition hover:bg-[#E9E0D2] hover:text-[#3E2723]"
+                                className="px-2 py-2.5 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-[#5D4037] transition hover:text-[#3E2723]"
                             >
                                 {link.name}
                             </a>
