@@ -6,15 +6,15 @@ const cn = (...inputs) => twMerge(clsx(inputs));
 
 const Button = ({ children, className, variant = 'primary', ...props }) => {
     const variants = {
-        primary: "bg-emerald-500/20 border-emerald-500/50 text-emerald-400 hover:bg-emerald-500/30",
-        secondary: "bg-white/5 border-white/10 text-slate-300 hover:bg-white/10",
-        outline: "border-white/20 text-white hover:bg-white/5",
+        primary: 'border-[#3E2723] bg-[#3E2723] text-[#F4F1EA] hover:bg-[#5D4037]',
+        secondary: 'border-[#5D4037]/25 bg-[#F4F1EA]/70 text-[#3E2723] hover:bg-[#E9E0D2]',
+        outline: 'border-[#5D4037]/30 text-[#3E2723] hover:bg-[#E9E0D2]',
     };
 
     return (
         <button
             className={cn(
-                "px-6 py-3 rounded-xl border font-medium transition-all active:scale-95",
+                'rounded-full border px-6 py-3 font-mono text-xs font-medium uppercase tracking-[0.16em] transition-all active:scale-95',
                 variants[variant],
                 className
             )}

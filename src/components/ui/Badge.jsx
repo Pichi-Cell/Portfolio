@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Badge = ({ children, className }) => {
+const Badge = ({ children, className = '' }) => {
     return (
-        <span className={`px-3 py-1 text-xs font-semibold rounded-full border border-white/10 bg-white/5 text-slate-300 ${className}`}>
+        <span className={`rounded-full border border-[#5D4037]/25 bg-[#F4F1EA]/70 px-3 py-1 font-mono text-xs font-medium uppercase tracking-[0.12em] text-[#5D4037] ${className}`}>
             {children}
         </span>
     );

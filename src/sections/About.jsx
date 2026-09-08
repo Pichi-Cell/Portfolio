@@ -21,7 +21,7 @@ const About = ({ data, resumeUrl, ui }) => {
                     viewport={{ once: true }}
                     className="lg:col-span-7"
                 >
-                    <h2 className="text-4xl font-bold text-white mb-6">
+                    <h2 className="text-4xl font-serif font-medium text-[#3E2723] mb-6">
                         {ui.heading} <span className="text-emerald-500">{ui.headingAccent}</span>
                     </h2>
                     <p className="text-lg text-slate-300 leading-relaxed mb-8">
@@ -61,7 +61,7 @@ const About = ({ data, resumeUrl, ui }) => {
                                     <FileText size={24} />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-white">{ui.cvTitle}</h3>
+                                    <h3 className="text-xl font-serif font-medium text-[#3E2723]">{ui.cvTitle}</h3>
                                     <p className="text-slate-400 text-sm">{ui.cvSubtitle}</p>
                                 </div>
                             </div>

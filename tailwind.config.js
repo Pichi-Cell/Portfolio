@@ -1,29 +1,24 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
       colors: {
-        neon: {
-          emerald: "#10b981",
-          teal: "#14b8a6",
-          slate: "#475569",
-        },
+        paper: '#F4F1EA',
+        paperLight: '#F9F8F6',
+        walnut: '#3E2723',
+        teak: '#5D4037',
+        clay: '#8D6E63',
       },
-      animation: {
-        'aurora': 'aurora 20s linear infinite',
-      },
-      keyframes: {
-        aurora: {
-          '0%, 100%': { transform: 'translate(0, 0) scale(1)' },
-          '33%': { transform: 'translate(10%, -10%) scale(1.1)' },
-          '66%': { transform: 'translate(-10%, 10%) scale(0.9)' },
-        },
+      fontFamily: {
+        serif: ['EB Garamond', 'ui-serif', 'Georgia', 'serif'],
+        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        mono: ['JetBrains Mono', 'ui-monospace', 'SFMono-Regular', 'monospace'],
       },
     },
   },
   plugins: [],
-}
+};

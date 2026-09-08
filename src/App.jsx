@@ -1,6 +1,5 @@
 import React from 'react';
 import Hero from './sections/Hero';
-import About from './sections/About';
 import Portfolio from './sections/Portfolio';
 import SkillsMatrix from './sections/SkillsMatrix';
 import Experience from './sections/Experience';
@@ -14,25 +13,21 @@ const AppContent = () => {
     const t = content[lang];
 
     return (
-        <div className="relative min-h-screen">
-            {/* Aurora Background */}
-            <div className="aurora-bg">
-                <div className="aurora-blob blob-1"></div>
-                <div className="aurora-blob blob-2"></div>
-                <div className="aurora-blob blob-3"></div>
-            </div>
-
+        <div className="relative min-h-screen overflow-hidden bg-[#F4F1EA] text-[#3E2723]">
             <ScrollNavbar ui={t.ui} />
 
             <main>
-                <Hero data={t.profile} ui={t.ui.hero} />
-                <About data={t.about} resumeUrl={t.profile.resumeUrl} ui={t.ui.about} />
-                <Portfolio projects={t.projects} ui={t.ui.portfolio} />
+                <Hero
+                    data={t.profile}
+                    stats={t.about.stats}
+                    resumeUrl={t.profile.resumeUrl}
+                    ui={{ ...t.ui.hero, cvButton: t.ui.about.cvButton }}
+                />
                 <SkillsMatrix skills={t.skills} ui={t.ui.skills} />
                 <Experience experience={t.experience} ui={t.ui.experience} />
+                <Portfolio projects={t.projects} ui={t.ui.portfolio} />
                 <Contact email={t.profile.email} ui={t.ui.contact} />
             </main>
-
         </div>
     );
 };

@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { useLanguage } from '../../context/LanguageContext';
 
 const LanguageSwitcher = () => {
@@ -7,30 +6,22 @@ const LanguageSwitcher = () => {
 
     return (
         <button
+            type="button"
             onClick={toggleLanguage}
-            className="relative flex items-center gap-0.5 text-xs font-bold tracking-wider rounded-full border border-white/10 bg-white/5 backdrop-blur-sm overflow-hidden select-none"
+            className="relative grid grid-cols-2 overflow-hidden rounded-full border border-[#5D4037]/25 bg-[#E9E0D2]/80 p-0.5 font-mono text-[10px] uppercase tracking-[0.18em] text-[#5D4037] shadow-inner"
             aria-label="Toggle language"
             id="language-switcher"
         >
             <span
-                className={`relative z-10 px-2.5 py-1.5 transition-colors duration-300 ${lang === 'en' ? 'text-emerald-400' : 'text-slate-400'
-                    }`}
-            >
+                aria-hidden="true"
+                className={`absolute bottom-0.5 left-0.5 top-0.5 w-[calc(50%_-_2px)] rounded-full bg-[#3E2723] transition-transform duration-300 ease-out ${lang === 'es' ? 'translate-x-full' : 'translate-x-0'}`}
+            />
+            <span className={`relative z-10 px-3 py-1.5 transition ${lang === 'en' ? 'text-[#F4F1EA]' : 'text-[#5D4037]'}`}>
                 EN
             </span>
-            <span
-                className={`relative z-10 px-2.5 py-1.5 transition-colors duration-300 ${lang === 'es' ? 'text-emerald-400' : 'text-slate-400'
-                    }`}
-            >
+            <span className={`relative z-10 px-3 py-1.5 transition ${lang === 'es' ? 'text-[#F4F1EA]' : 'text-[#5D4037]'}`}>
                 ES
             </span>
-
-            {/* Animated highlight pill */}
-            <motion.div
-                className="absolute top-0.5 bottom-0.5 w-[calc(50%-2px)] rounded-full bg-emerald-500/15 border border-emerald-500/30"
-                animate={{ x: lang === 'en' ? 2 : '100%' }}
-                transition={{ type: 'spring', stiffness: 500, damping: 30 }}
-            />
         </button>
     );
 };
