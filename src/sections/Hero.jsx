@@ -4,12 +4,12 @@ import { Download } from "lucide-react";
 
 const Hero = ({ data, resumeUrl, ui }) => {
   return (
-    <section className="relative isolate min-h-[92svh] px-6 pb-24 pt-28 sm:pt-32 md:min-h-screen md:px-8 md:pb-24 lg:pt-40">
+    <section className="relative isolate min-h-[92svh] overflow-hidden px-5 pb-12 pt-24 sm:px-6 sm:pb-16 sm:pt-28 md:min-h-screen md:overflow-visible md:px-8 md:pb-24 md:pt-32 lg:pt-40">
       <img
         src="/flower.png"
         alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute -right-20 bottom-2 top-auto z-0 block w-[21rem] rotate-[-40deg] scale-x-[-1] opacity-[0.18] mix-blend-multiply sepia saturate-[0.78] contrast-[1.04] sm:-right-28 sm:w-[24rem] sm:opacity-[0.14] md:bottom-auto md:right-4 md:top-1 md:w-[32rem] md:opacity-[0.18] xl:right-24 xl:w-[38rem]"
+        className="pointer-events-none absolute -right-24 bottom-2 top-auto z-0 hidden w-[18rem] rotate-[-40deg] scale-x-[-1] opacity-[0.14] mix-blend-multiply sepia saturate-[0.78] contrast-[1.04] sm:-right-28 sm:w-[24rem] sm:opacity-[0.14] md:bottom-auto md:right-4 md:top-1 md:block md:w-[32rem] md:opacity-[0.18] xl:right-24 xl:w-[38rem]"
       />
       <div className="absolute left-0 top-0 z-0 h-64 w-64 rounded-full bg-[#8D6E63]/10 blur-3xl" />
 
@@ -18,14 +18,15 @@ const Hero = ({ data, resumeUrl, ui }) => {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.75, ease: "easeOut" }}
+          className="min-w-0 max-w-full"
         >
-          <p className="mb-5 max-w-[18rem] font-mono text-[10px] uppercase leading-5 tracking-[0.2em] text-[#5D4037] sm:max-w-none sm:text-xs sm:tracking-[0.34em]">
+          <p className="mb-5 max-w-full break-words font-mono text-[10px] uppercase leading-5 tracking-[0.2em] text-[#5D4037] sm:max-w-none sm:break-normal sm:text-xs sm:tracking-[0.34em]">
             <span>{data.title}</span>
             <span className="mx-2 opacity-60">|</span>
             <span>{data.email}</span>
           </p>
 
-          <h1 className="max-w-5xl text-balance font-serif text-[3.25rem] font-medium leading-[0.88] tracking-[-0.055em] text-[#3E2723] sm:text-7xl sm:leading-[0.82] md:text-8xl lg:text-[10rem] lg:leading-[0.78] xl:text-[12rem]">
+          <h1 className="max-w-5xl text-balance font-serif text-[3rem] font-medium leading-[0.92] tracking-[-0.055em] text-[#3E2723] min-[380px]:text-[3.25rem] sm:text-7xl sm:leading-[0.82] md:text-8xl lg:text-[10rem] lg:leading-[0.78] xl:text-[12rem]">
             {ui.greeting} <br className="sm:hidden" />
             {data.name}
           </h1>
@@ -34,7 +35,13 @@ const Hero = ({ data, resumeUrl, ui }) => {
             <p className="font-sans text-lg font-semibold tracking-[-0.02em] text-[#3E2723] sm:text-xl md:text-2xl">
               {data.title}
             </p>
-            <p className="mt-4 max-w-2xl text-[15px] leading-8 text-[#5D4037] sm:text-base sm:leading-8 md:text-lg">
+            <p className="mt-4 flow-root max-w-2xl text-[15px] leading-7 text-[#5D4037] sm:text-base sm:leading-8 md:block md:text-lg">
+              <img
+                src="/flower.png"
+                alt=""
+                aria-hidden="true"
+                className="pointer-events-none float-right -mr-10 ml-3 mt-5 block w-[9.5rem] rotate-[-40deg] scale-x-[-1] opacity-[0.18] mix-blend-multiply sepia saturate-[0.78] contrast-[1.04] [shape-margin:0.75rem] [shape-outside:url('/flower.png')] min-[380px]:-mr-12 min-[380px]:w-[10.75rem] sm:-mr-14 sm:ml-5 sm:mt-6 sm:w-[13rem] md:hidden"
+              />
               {data.bio}
             </p>
           </div>
