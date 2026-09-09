@@ -14,7 +14,7 @@ const Button = ({ children, className, variant = 'primary', ...props }) => {
     return (
         <button
             className={cn(
-                'rounded-full border px-6 py-3 font-mono text-xs font-medium uppercase tracking-[0.16em] transition-all active:scale-95',
+                'min-h-[44px] w-full rounded-full border px-6 py-3 font-mono text-xs font-medium uppercase tracking-[0.16em] transition-all active:scale-95 sm:w-auto',
                 variants[variant],
                 className
             )}
