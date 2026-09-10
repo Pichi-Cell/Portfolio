@@ -3,11 +3,16 @@ import { ExternalLink, Github, Play } from "lucide-react";
 import FloralIllustration from "../components/ui/FloralIllustration";
 import LazyVideo from "../components/ui/LazyVideo";
 
+const imageDimensions = {
+  "/banco_de_pruebas.webp": { width: 960, height: 622 },
+  "/robot_hackaton.webp": { width: 960, height: 715 },
+};
+
 const Portfolio = ({ projects, ui }) => {
   return (
     <section
       id="portfolio"
-      className="relative isolate scroll-mt-24 px-6 py-12 md:scroll-mt-28 md:px-8 md:py-16 lg:py-20"
+      className="cv-auto relative isolate scroll-mt-24 px-6 py-12 md:scroll-mt-28 md:px-8 md:py-16 lg:py-20"
     >
       <FloralIllustration className="pointer-events-none absolute right-[-8rem] bottom-0 top-auto z-0 w-[15rem] rotate-6 text-[#5D4037] opacity-[0.045] mix-blend-multiply sm:right-[-9rem] sm:w-[19rem] md:right-[-7rem] md:bottom-auto md:top-1/3 md:w-[24rem] md:opacity-[0.12]" />
 
@@ -58,6 +63,10 @@ const Portfolio = ({ projects, ui }) => {
                     src={project.image}
                     alt={project.title}
                     loading="lazy"
+                    decoding="async"
+                    width={imageDimensions[project.image]?.width}
+                    height={imageDimensions[project.image]?.height}
+                    sizes="(min-width: 1024px) calc(50vw - 2.25rem), calc(100vw - 3rem)"
                     className="h-full w-full object-cover opacity-90 mix-blend-multiply saturate-[0.82] transition duration-500 group-hover:scale-[1.025]"
                   />
                 </div>

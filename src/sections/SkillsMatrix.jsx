@@ -7,7 +7,7 @@ const SkillsMatrix = ({ skills, ui }) => {
   return (
     <section
       id="skills"
-      className="relative isolate scroll-mt-24 px-6 py-12 md:scroll-mt-28 md:px-8 md:py-16 lg:py-20"
+      className="cv-auto relative isolate scroll-mt-24 px-6 py-12 md:scroll-mt-28 md:px-8 md:py-16 lg:py-20"
     >
       <FloralIllustration className="pointer-events-none absolute -left-36 bottom-0 top-auto z-0 w-[16rem] rotate-[-10deg] text-[#5D4037] opacity-[0.045] mix-blend-multiply sm:-left-44 sm:w-[20rem] md:-left-40 md:bottom-auto md:top-20 md:w-[26rem] md:opacity-[0.11]" />
 

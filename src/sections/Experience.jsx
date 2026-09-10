@@ -4,7 +4,7 @@ const Experience = ({ experience, ui }) => {
   return (
     <section
       id="experience"
-      className="scroll-mt-24 px-6 py-12 md:scroll-mt-28 md:px-8 md:py-16 lg:py-20"
+      className="cv-auto scroll-mt-24 px-6 py-12 md:scroll-mt-28 md:px-8 md:py-16 lg:py-20"
     >
       <div className="mx-auto max-w-7xl">
         <div className="mb-5 grid gap-5 border-t border-[#5D4037]/20 pt-5 sm:mb-6 sm:gap-6 sm:pt-6 md:grid-cols-[0.85fr_1fr] md:items-end">

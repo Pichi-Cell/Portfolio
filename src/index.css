@@ -58,6 +58,11 @@ video {
   background: #EDE7DC;
 }
 
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-block-size: 900px;
+}
+
 body.menu-open {
   overflow: hidden;
 }

@@ -19,11 +19,16 @@ const Hero = ({ data, resumeUrl, ui }) => {
             </p>
             <p className="mt-4 flow-root max-w-2xl text-[15px] leading-7 text-[#5D4037] sm:text-base sm:leading-8 md:block md:text-lg">
               <picture className="pointer-events-none float-right -mr-10 ml-3 mt-5 block w-[9.5rem] rotate-[-40deg] scale-x-[-1] opacity-[0.18] mix-blend-multiply sepia saturate-[0.78] contrast-[1.04] [shape-margin:0.75rem] max-md:[shape-outside:url('/flower-low.webp')] min-[380px]:-mr-12 min-[380px]:w-[10.75rem] sm:-mr-14 sm:ml-5 sm:mt-6 sm:w-[13rem] md:absolute md:-right-28 md:bottom-auto md:-top-28 md:z-[-1] lg:-top-36 md:m-0 md:w-[32rem] md:float-none md:opacity-[0.18] xl:right-0 xl:w-[38rem]">
-                <source media="(min-width: 768px)" srcSet="/flower.webp" />
+                <source media="(min-width: 768px)" srcSet="/flower.webp" width="667" height="1019" />
                 <img
                   src="/flower-low.webp"
                   alt=""
                   aria-hidden="true"
+                  width="320"
+                  height="489"
+                  sizes="(min-width: 1280px) 38rem, (min-width: 768px) 32rem, 13rem"
+                  decoding="async"
+                  fetchPriority="low"
                   className="h-auto w-full"
                 />
               </picture>

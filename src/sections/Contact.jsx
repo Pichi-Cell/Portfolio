@@ -21,7 +21,7 @@ const Contact = ({ profile, ui }) => {
   return (
     <footer
       id="contact"
-      className="scroll-mt-24 px-6 py-12 md:scroll-mt-28 md:px-8 md:py-16 lg:py-20"
+      className="cv-auto scroll-mt-24 px-6 py-12 md:scroll-mt-28 md:px-8 md:py-16 lg:py-20"
     >
       <div className="mx-auto max-w-7xl border-t border-[#5D4037]/25 pt-6 sm:pt-8">
         <div className="grid gap-8 sm:gap-10 md:grid-cols-[0.78fr_1fr] md:items-end">

@@ -6,15 +6,14 @@ import Experience from './sections/Experience';
 import Contact from './sections/Contact';
 import ScrollNavbar from './components/layout/ScrollNavbar';
 import content from './data/content.json';
-import { LanguageProvider, useLanguage } from './context/LanguageContext';
 
-const AppContent = () => {
-    const { lang } = useLanguage();
+const App = ({ initialLang = 'en' }) => {
+    const lang = initialLang === 'es' ? 'es' : 'en';
     const t = content[lang];
 
     return (
         <div className="relative min-h-screen overflow-hidden bg-transparent text-[#3E2723]">
-            <ScrollNavbar ui={t.ui} />
+            <ScrollNavbar ui={t.ui} lang={lang} />
 
             <main>
                 <Hero
@@ -28,14 +27,6 @@ const AppContent = () => {
                 <Contact profile={t.profile} ui={t.ui.contact} />
             </main>
         </div>
-    );
-};
-
-const App = () => {
-    return (
-        <LanguageProvider>
-            <AppContent />
-        </LanguageProvider>
     );
 };
 
