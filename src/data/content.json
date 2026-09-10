@@ -7,20 +7,27 @@
       "email": "hello@lpicchi.com",
       "resumeUrl": "/resume_en.pdf",
       "interests": [
-        "TypeScript",
-        "C",
+        "Hackathons",
+        "Vintage Audio",
+        "Animals",
+        "High Fantasy Novels",
         "AI",
+        "C",
+        "TypeScript",
+        "Integration",
         "Node.js",
         "PostgreSQL",
-        "Redis",
         "React",
         "Next.js",
-        "PHP",
-        "Electronics"
-      ]
+        "PHP"
+      ],
+      "location": "Lanus, Buenos Aires Province",
+      "website": "lpicchi.com",
+      "phone": "+54 9 11 28987199",
+      "languages": "Native spanish, C1 English (Cambridge)"
     },
     "about": {
-      "description": "Tech enthusiast and Electronic Engineering student. Collaborator at the UTN FRA embedded systems laboratory. I spend most of my day thinking about computers.",
+      "description": "Tech enthusiast and Electronic Engineering student at UTN (National Technological University). B.S. in Electronics Engineering, 2024 - Present (Estimated graduation: 2030). Collaborator at the UTN FRA embedded systems laboratory. I spend most of my day thinking about computers.",
       "stats": [
         {
           "label": "Years of Professional Experience",
@@ -29,122 +36,153 @@
       ]
     },
     "skills": {
-      "Backend": [
-        "Typescript",
-        "Python",
-        "RESTful APIs",
-        "WebSockets",
-        "Golang",
-        "C"
-      ],
-      "Frontend": [
-        "React",
+      "Full-Stack & Web": [
         "TypeScript",
-        "Next.js",
-        "php",
-        "Tailwind CSS",
-        "Three.js"
+        "React",
+        "NextJS",
+        "Python",
+        "PHP",
+        "REST APIs",
+        "Webhooks"
       ],
-      "AI": [
-        "MCP",
-        "Computer vision",
-        "Multi agent workflows",
-        "Spec driven development",
-        "Context Window Management"
-      ],
-      "Data & Infrastructure": [
-        "Embedded/industrial systems",
+      "Integration & Architecture": [
         "PostgreSQL",
-        "Redis",
-        "MongoDB",
+        "TimescaleDB",
         "Docker",
-        "Docker Compose",
-        "Nginx"
+        "Gitlab CI/CD",
+        "APIs (REST/Webhooks)",
+        "Tango CRM"
+      ],
+      "IoT & Edge": [
+        "MQTT",
+        "Modbus",
+        "C",
+        "PLCs",
+        "PLC/SCADA systems",
+        "Embedded/industrial systems"
+      ],
+      "Innovation": [
+        "AI Agents",
+        "Computer Vision",
+        "MCP",
+        "LLMs",
+        "Anomaly detection",
+        "Spec driven development"
       ],
       "DevOps & Tools": [
-        "GitLab CI/CD",
+        "Docker Compose",
+        "Nginx",
         "Jenkins",
         "Git",
         "Bash Scripting",
         "Grafana"
       ],
-      "Leadership & Coworking": [
-        "Team Lead",
-        "Mentorship",
-        "Agile Workflows",
-        "Stakeholder Management"
+      "Languages & Interests": [
+        "Native spanish",
+        "C1 English (Cambridge)",
+        "Hackathons",
+        "Vintage Audio",
+        "Animals",
+        "High Fantasy Novels"
       ]
     },
     "projects": [
       {
         "title": "Vision Electronic Indexing",
-        "description": "Model Context Protocol (MCP) server that bridges local image processing with Vision Models to automate hardware inventory and extract IC markings from PCB photos using agent-assisted workflows.",
+        "description": "Agent-assisted electronics parts/PCB photo indexing. The package processes images with Cloudflare Workers AI, extracts visible IC/package markings, prepares parts for datasheet lookup, and produces an enriched inventory CSV. It is intended to be used with a coding agent to populate data and exposes tools for Pi, plus an alternative MCP server for other agent harnesses.",
         "video": "/video_vision.webm",
-        "tags": ["Python", "MCP", "Cloudflare Workers AI", "LLMs"],
+        "tags": [
+          "Python",
+          "MCP",
+          "Cloudflare Workers AI",
+          "LLMs"
+        ],
         "links": {
           "github": "https://github.com/Pichi-Cell/vision-electronic-indexing",
           "live": "https://pi.dev/packages/vision-electronic-indexing-pi"
         }
       },
       {
-        "title": "Industrial Telemetry Platform",
-        "description": "Real-time monitoring system for industrial compressors, featuring high-frequency data ingestion and live performance visualization.",
+        "title": "Telemetry platform",
+        "description": "As Project Lead and core developer, I designed the architecture for an industrial compressor telemetry platform across hardware, software and DevOps. It connects microcontrollers with PLC/SCADA systems through C and Modbus, scales data through MQTT and TimescaleDB, and delivers a TypeScript web app integrated with Tango CRM and AI anomaly detection.",
         "video": "/telemetry_video.webm",
-        "tags": ["Node.js", "Redis", "PostgreSQL", "Docker"],
+        "tags": [
+          "TypeScript",
+          "C",
+          "Modbus",
+          "MQTT",
+          "TimescaleDB",
+          "Tango CRM",
+          "AI anomaly detection"
+        ],
+        "links": {}
+      },
+      {
+        "title": "Automated Test Bench",
+        "description": "Automated test bench for industrial air compressors. I led the hardware and software work, designing instrumentation and data acquisition with PLCs communicating through Modbus and MQTT. I also built the PHP frontend and CRM integration, replacing the previous manual process for quality control and repair-quote data capture.",
+        "tags": [
+          "PHP",
+          "PLCs",
+          "Modbus",
+          "MQTT",
+          "CRM",
+          "Data acquisition"
+        ],
+        "links": {},
+        "image": "/banco_de_pruebas.webp"
+      },
+      {
+        "title": "REI",
+        "description": "REI is the creation my team and I built during a hackathon: 12 hours with one goal, making something that used sensors to understand its surroundings and turn that into lights, sound, or movement. Built around an ESP32 DevKit, LM298N motor driver, yellow motors and an MPU6050, REI walked, balanced, reacted to hand gestures, and gave life to a tiny robot we still love.",
+        "image": "/robot_hackaton.webp",
+        "tags": [
+          "Hackathon",
+          "Sensors",
+          "Robotics",
+          "Lights",
+          "Sound",
+          "Movement"
+        ],
         "links": {}
       }
     ],
     "experience": [
       {
-        "role": "Lead Developer",
-        "company": "DMD COMPRESORES SAIC",
-        "period": "Feb 2025 — Present",
+        "role": "Full-Stack Developer | Integration | Team Lead",
+        "company": "DMD Compresores",
+        "location": "Lanús, PBA",
+        "period": "2023 — Present",
         "bullets": [
-          "Developing an end-to-end real-time telemetry platform for industrial compressor monitoring and data analysis using Node.JS, Typescript, React and TailwindCSS. Worked as team leader in this project.",
-          "Optimized data pipelines using Redis and PostgreSQL to handle massive historical datasets and high-frequency sensor ingestion without performance degradation.",
-          "Managed infrastructure, containerized application deployments and automated CI/CD pipelines with agentic automations via GitLab."
+          "Development of a real-time telemetry platform for industrial air compressors.",
+          "Integration of embedded systems, web platforms, artificial intelligence, industrial communication protocols, and enterprise CRMs.",
+          "Infrastructure deployment in on-premise/cloud environments.",
+          "Full software lifecycle management."
         ]
       },
       {
-        "role": "R&D Collaborator - Embedded Systems Lab",
-        "company": "Universidad Tecnológica Nacional (UTN)",
-        "period": "June 2026 — Present",
+        "role": "UTN FRA Embedded Systems Lab Collaborator",
+        "company": "UTN FRA",
+        "location": "Avellaneda, PBA",
+        "period": "Present",
         "bullets": [
-          "Conducting research and development at the intersection of embedded systems and applied AI.",
-          "Developed Vision Electronic Indexing (published open-source as a Pi extension), a Model Context Protocol (MCP) server that bridges local image processing with Cloudflare Workers AI to automate hardware inventory.",
-          "Designed an agent-assisted workflow that extracts integrated circuit (IC) codes from photos and orchestrates LLMs to verify and enrich inventory data via web-searched datasheets, transforming unstructured image data into CSV reports."
-        ]
-      },
-      {
-        "role": "Fullstack / Embedded",
-        "company": "DMD COMPRESORES SAIC",
-        "period": "Jan 2024 — Feb 2025",
-        "bullets": [
-          "Developed an automated testing system for production lines connecting industrial equipment and PLCs to a modern web application using ModBus communication with Node.JS.",
-          "Implemented real-time dashboards featuring complex data visualizations for industrial metrics using React.",
-          "Developed embedded acquisition systems to interface hardware sensors with backend services using C."
-        ]
-      },
-      {
-        "role": "Internship",
-        "company": "DMD COMPRESORES",
-        "period": "2023",
-        "bullets": [
-          "Maintained low scale web applications using Node.js and React.",
-          "Optimized database performance through indexing and query refactoring, significantly reducing API response times."
+          "Development of a software tool (VEI) for the digitization, tracking, and inventory management of electronic components.",
+          "Collaboration on research projects.",
+          "Development of web pages for the institution."
         ]
       }
     ],
     "education": [
       {
-        "title": "Electronic Engineering (In Progress)",
-        "institution": "Universidad Tecnológica Nacional (UTN)",
-        "period": "2024 – 2029 (Expected)"
+        "title": "B.S. in Electronics Engineering",
+        "institution": "UTN (National Technological University)",
+        "location": "Avellaneda, PBA",
+        "period": "2024 - Present (Estimated graduation: 2030)"
       },
       {
-        "title": "Technical High School in Electronics",
-        "institution": "E.E.S.T. N°9 Lanús, Buenos Aires",
-        "period": "2017 – 2023"
+        "title": "Electronics Technician",
+        "institution": "E.E.S.T N°9 Lanús",
+        "location": "Lanús, PBA",
+        "period": "2023"
       }
     ],
     "ui": {
@@ -152,7 +190,8 @@
         "portfolio": "Portfolio",
         "skills": "Skills",
         "experience": "Experience",
-        "contact": "Contact"
+        "contact": "Contact",
+        "education": "Education"
       },
       "hero": {
         "greeting": "I'm"
@@ -179,7 +218,15 @@
       },
       "contact": {
         "heading": "Let's Build Something Together",
-        "subtitle": "Currently exploring new opportunities and challenges. Reach out if you're looking for a developer with true passion for his work."
+        "subtitle": "Currently exploring new opportunities and challenges. Reach out if you're looking for a developer with true passion for his work.",
+        "phoneLabel": "Phone",
+        "websiteLabel": "Website",
+        "locationLabel": "Location",
+        "languagesLabel": "Languages"
+      },
+      "education": {
+        "heading": "Education",
+        "subtitle": "Formal electronics background supporting full-stack, integration and embedded systems work."
       }
     }
   },
@@ -191,20 +238,27 @@
       "email": "hello@lpicchi.com",
       "resumeUrl": "/resume_es.pdf",
       "interests": [
-        "TypeScript",
-        "C",
+        "Hackatons",
+        "Audio vintage",
+        "Animales",
+        "Novelas de alta fantasía",
         "IA",
+        "C",
+        "TypeScript",
+        "Integración",
         "Node.js",
         "PostgreSQL",
-        "Redis",
         "React",
         "Next.js",
-        "PHP",
-        "Electrónica"
-      ]
+        "PHP"
+      ],
+      "location": "Provincia de buenos aires, Lanús",
+      "website": "lpicchi.com",
+      "phone": "+54 9 11 28987199",
+      "languages": "Español nativo, Inglés C1 (Cambridge)"
     },
     "about": {
-      "description": "Entusiasta de la tecnología y estudiante de Ingeniería Electrónica. Colaborador del laboratorio de sistemas embebidos de la UTN FRA. Paso la mayor parte del día pensando en computadoras.",
+      "description": "Entusiasta de la tecnología y estudiante de Ingeniería Electrónica en UTN (Universidad Tecnológica Nacional), 2024 - Presente (Graduación estimada: 2030). Colaborador del Laboratorio de Sistemas Embebidos de UTN FRA. Paso la mayor parte del día pensando en computadoras.",
       "stats": [
         {
           "label": "Años de Experiencia Profesional",
@@ -213,122 +267,153 @@
       ]
     },
     "skills": {
-      "Backend": [
-        "Typescript",
-        "Python",
-        "APIs RESTful",
-        "WebSockets",
-        "Golang",
-        "C"
-      ],
-      "Frontend": [
-        "React",
+      "Full-Stack & Web": [
         "TypeScript",
-        "Next.js",
+        "React",
+        "NextJS",
+        "Python",
         "PHP",
-        "Tailwind CSS",
-        "Three.js"
+        "APIs REST",
+        "Webhooks"
       ],
-      "IA": [
-        "MCP",
-        "Computer vision",
-        "Flujos multiagente",
-        "Spec driven development",
-        "Gestión de contexto"
-      ],
-      "Datos e Infraestructura": [
-        "Sistemas embebidos/industriales",
+      "Integración & Arquitectura": [
         "PostgreSQL",
-        "Redis",
-        "MongoDB",
+        "TimescaleDB",
         "Docker",
-        "Docker Compose",
-        "Nginx"
+        "Gitlab CI/CD",
+        "APIs (REST/Webhooks)",
+        "Tango CRM"
+      ],
+      "IoT & Edge": [
+        "MQTT",
+        "Modbus",
+        "C",
+        "PLCs",
+        "Sistemas PLC/SCADA",
+        "Sistemas embebidos/industriales"
+      ],
+      "Innovación": [
+        "Agentes de IA",
+        "Computer Vision",
+        "MCP",
+        "LLMs",
+        "Detección de anomalías",
+        "Spec driven development"
       ],
       "DevOps y Herramientas": [
-        "GitLab CI/CD",
+        "Docker Compose",
+        "Nginx",
         "Jenkins",
         "Git",
         "Bash Scripting",
         "Grafana"
       ],
-      "Liderazgo y Trabajo Colaborativo": [
-        "Liderazgo de equipo",
-        "Mentorías",
-        "Agile",
-        "Gestión de stakeholders"
+      "Idiomas e Intereses": [
+        "Español nativo",
+        "Inglés C1 (Cambridge)",
+        "Hackatons",
+        "Audio vintage",
+        "Animales",
+        "Novelas de alta fantasía"
       ]
     },
     "projects": [
       {
         "title": "Vision Electronic Indexing",
-        "description": "Servidor Model Context Protocol (MCP) que conecta el procesamiento local de imágenes con modelos de visión para automatizar el inventario de hardware y extraer marcas de circuitos integrados desde fotos de PCB mediante flujos de trabajo asistidos por agentes.",
+        "description": "Indexación asistida por agentes para fotos de componentes electrónicos y PCB. El paquete procesa imágenes con Cloudflare Workers AI, extrae marcas visibles de ICs/paquetes, prepara componentes para búsqueda de datasheets y produce un CSV de inventario enriquecido. Está pensado para usarse con un coding agent y expone herramientas para Pi, además de un servidor MCP alternativo.",
         "video": "/video_vision.webm",
-        "tags": ["Python", "MCP", "Cloudflare Workers AI", "LLMs"],
+        "tags": [
+          "Python",
+          "MCP",
+          "Cloudflare Workers AI",
+          "LLMs"
+        ],
         "links": {
           "github": "https://github.com/Pichi-Cell/vision-electronic-indexing",
           "live": "https://pi.dev/packages/vision-electronic-indexing-pi"
         }
       },
       {
-        "title": "Plataforma de Telemetría Industrial",
-        "description": "Sistema de monitoreo en tiempo real para compresores industriales, con ingesta de datos a alta frecuencia y visualización de rendimiento en vivo.",
+        "title": "Plataforma de telemetría",
+        "description": "Como Líder de Proyecto y desarrollador principal, diseñé la arquitectura de una plataforma de telemetría para compresores industriales, cubriendo hardware, software y DevOps. Conecta microcontroladores con PLC/SCADA mediante C y Modbus, escala datos con MQTT y TimescaleDB, y entrega una web en TypeScript integrada con Tango CRM y detección de anomalías por IA.",
         "video": "/telemetry_video.webm",
-        "tags": ["Node.js", "Redis", "PostgreSQL", "Docker"],
+        "tags": [
+          "TypeScript",
+          "C",
+          "Modbus",
+          "MQTT",
+          "TimescaleDB",
+          "Tango CRM",
+          "Detección de anomalías"
+        ],
+        "links": {}
+      },
+      {
+        "title": "Banco de pruebas",
+        "description": "Banco de pruebas automatizado para compresores de aire industriales. Lideré el desarrollo de hardware y software, diseñando instrumentación y adquisición de datos con PLCs comunicados vía Modbus y MQTT. También desarrollé el frontend en PHP y la integración con el CRM, reemplazando el proceso manual de control de calidad y cotización de reparaciones.",
+        "tags": [
+          "PHP",
+          "PLCs",
+          "Modbus",
+          "MQTT",
+          "CRM",
+          "Adquisición de datos"
+        ],
+        "links": {},
+        "image": "/banco_de_pruebas.webp"
+      },
+      {
+        "title": "REI",
+        "description": "REI es la creación que hicimos junto con mi equipo durante una Hackaton: 12 horas con un solo objetivo, hacer algo que use sensores para saber sobre sus alrededores y que convierta eso en luces, sonido o movimiento. Con una ESP32 DevKit, un LM298N, motores amarillos y un MPU6050, REI pudo caminar, balancearse, reaccionar a gestos con la mano y, por sobre todo, amar.",
+        "image": "/robot_hackaton.webp",
+        "tags": [
+          "Hackaton",
+          "Sensores",
+          "Robótica",
+          "Luces",
+          "Sonido",
+          "Movimiento"
+        ],
         "links": {}
       }
     ],
     "experience": [
       {
-        "role": "Lead Developer",
-        "company": "DMD COMPRESORES SAIC",
-        "period": "Feb 2025 — Presente",
+        "role": "Desarrollador Full-Stack | Integración | Team Lead",
+        "company": "DMD Compresores",
+        "location": "Lanús, PBA",
+        "period": "2023 — Presente",
         "bullets": [
-          "Desarrollando una plataforma integral de telemetría en tiempo real para monitoreo y análisis de datos de compresores industriales usando Node.JS, Typescript, React y TailwindCSS. Trabajé como líder de equipo en este proyecto.",
-          "Optimicé pipelines de datos usando Redis y PostgreSQL para manejar datasets históricos masivos e ingesta de sensores de alta frecuencia sin degradación del rendimiento.",
-          "Gestioné infraestructura, despliegues de aplicaciones en contenedores y pipelines CI/CD automatizados con automatizaciones agénticas vía GitLab."
+          "Desarrollo de una plataforma de telemetría en tiempo real para compresores de aire industriales.",
+          "Integración de sistemas embebidos, plataformas web, inteligencia artificial, protocolos de comunicación industriales y CRM empresariales.",
+          "Despliegue de infraestructura en sistemas on-premise/cloud.",
+          "Gestión ciclo de vida completo del software."
         ]
       },
       {
-        "role": "Colaborador de I+D - Laboratorio de Sistemas Embebidos",
-        "company": "Universidad Tecnológica Nacional (UTN)",
-        "period": "Junio 2026 — Presente",
+        "role": "Colaborador del Laboratorio de Sistemas Embebidos",
+        "company": "UTN FRA",
+        "location": "Avellaneda, PBA",
+        "period": "Presente",
         "bullets": [
-          "Realizando investigación y desarrollo en la intersección entre sistemas embebidos e IA aplicada.",
-          "Desarrollé Vision Electronic Indexing (publicado como open-source en forma de extensión para Pi), un servidor Model Context Protocol (MCP) que conecta procesamiento local de imágenes con Cloudflare Workers AI para automatizar inventarios de hardware.",
-          "Diseñé un flujo de trabajo asistido por agentes que extrae códigos de circuitos integrados (IC) desde fotos y orquesta LLMs para verificar y enriquecer datos de inventario mediante hojas de datos encontradas en la web, transformando imágenes no estructuradas en reportes CSV."
-        ]
-      },
-      {
-        "role": "Fullstack / Embebidos",
-        "company": "DMD COMPRESORES SAIC",
-        "period": "Ene 2024 — Feb 2025",
-        "bullets": [
-          "Desarrollé un sistema de pruebas automatizadas para líneas de producción conectando equipos industriales y PLCs a una aplicación web moderna usando comunicación ModBus con Node.JS.",
-          "Implementé dashboards en tiempo real con visualizaciones complejas para métricas industriales usando React.",
-          "Desarrollé sistemas de adquisición embebidos para conectar sensores de hardware con servicios backend usando C."
-        ]
-      },
-      {
-        "role": "Pasantía",
-        "company": "DMD COMPRESORES",
-        "period": "2023",
-        "bullets": [
-          "Mantuve aplicaciones web de baja escala usando Node.js y React.",
-          "Optimicé el rendimiento de bases de datos mediante indexación y refactorización de consultas, reduciendo significativamente los tiempos de respuesta de la API."
+          "Desarrollo de una herramienta de software (VEI) para la digitalización, seguimiento y gestión de inventario de componentes electrónicos.",
+          "Colaboración en proyectos de investigación.",
+          "Desarrollo de páginas web para la institución."
         ]
       }
     ],
     "education": [
       {
-        "title": "Ingeniería Electrónica (En curso)",
-        "institution": "Universidad Tecnológica Nacional (UTN)",
-        "period": "2024 – 2029 (Fecha estimada)"
+        "title": "Ing. Electrónica",
+        "institution": "UTN (Universidad Tecnológica Nacional)",
+        "location": "Avellaneda, PBA",
+        "period": "2024 - Presente (Graduación estimada: 2030)"
       },
       {
-        "title": "Técnico Electrónico",
-        "institution": "E.E.S.T. N°9 Lanús, Buenos Aires",
-        "period": "2017 – 2023"
+        "title": "Técnico en electrónica",
+        "institution": "E.E.S.T N°9 Lanús",
+        "location": "Lanús, PBA",
+        "period": "2023"
       }
     ],
     "ui": {
@@ -336,7 +421,8 @@
         "portfolio": "Proyectos",
         "skills": "Habilidades",
         "experience": "Experiencia",
-        "contact": "Contacto"
+        "contact": "Contacto",
+        "education": "Educación"
       },
       "hero": {
         "greeting": "Soy"
@@ -363,7 +449,15 @@
       },
       "contact": {
         "heading": "Trabajemos Juntos",
-        "subtitle": "Actualmente explorando nuevas oportunidades y desafíos. Contactame si buscás un desarrollador con verdadera pasión por su trabajo."
+        "subtitle": "Actualmente explorando nuevas oportunidades y desafíos. Contactame si buscás un desarrollador con verdadera pasión por su trabajo.",
+        "phoneLabel": "Teléfono",
+        "websiteLabel": "Sitio web",
+        "locationLabel": "Ubicación",
+        "languagesLabel": "Idiomas"
+      },
+      "education": {
+        "heading": "Educación",
+        "subtitle": "Formación formal en electrónica aplicada al desarrollo full-stack, integración y sistemas embebidos."
       }
     }
   }

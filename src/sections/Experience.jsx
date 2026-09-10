@@ -4,10 +4,10 @@ const Experience = ({ experience, ui }) => {
   return (
     <section
       id="experience"
-      className="scroll-mt-24 px-6 py-20 md:scroll-mt-28 md:px-8 lg:py-32"
+      className="scroll-mt-24 px-6 py-12 md:scroll-mt-28 md:px-8 md:py-16 lg:py-20"
     >
       <div className="mx-auto max-w-7xl">
-        <div className="mb-6 grid gap-5 border-t border-[#5D4037]/20 pt-6 sm:mb-8 sm:gap-6 sm:pt-8 md:grid-cols-[0.85fr_1fr] md:items-end">
+        <div className="mb-5 grid gap-5 border-t border-[#5D4037]/20 pt-5 sm:mb-6 sm:gap-6 sm:pt-6 md:grid-cols-[0.85fr_1fr] md:items-end">
           <div>
             <h2 className="text-balance font-serif text-[2.75rem] font-medium leading-[0.95] tracking-[-0.04em] text-[#3E2723] sm:text-5xl md:text-7xl md:leading-none">
               {ui.heading}
@@ -22,7 +22,7 @@ const Experience = ({ experience, ui }) => {
           {experience.map((exp, index) => (
             <article
               key={`${exp.company}-${exp.period}`}
-              className="relative grid gap-5 border-b border-[#5D4037]/20 py-8 pl-7 last:border-b-0 sm:gap-6 sm:py-9 lg:grid-cols-[15rem_1fr] lg:pl-0"
+              className="relative grid gap-5 border-b border-[#5D4037]/20 py-6 pl-7 last:border-b-0 sm:gap-6 sm:py-7 lg:grid-cols-[15rem_1fr] lg:pl-0"
             >
               <div className="flex items-start gap-4 lg:block">
                 <div>

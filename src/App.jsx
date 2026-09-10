@@ -25,7 +25,7 @@ const AppContent = () => {
                 <SkillsMatrix skills={t.skills} ui={t.ui.skills} />
                 <Experience experience={t.experience} ui={t.ui.experience} />
                 <Portfolio projects={t.projects} ui={t.ui.portfolio} />
-                <Contact email={t.profile.email} ui={t.ui.contact} />
+                <Contact profile={t.profile} ui={t.ui.contact} />
             </main>
         </div>
     );

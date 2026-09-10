@@ -7,12 +7,12 @@ const Portfolio = ({ projects, ui }) => {
   return (
     <section
       id="portfolio"
-      className="relative isolate scroll-mt-24 px-6 py-20 md:scroll-mt-28 md:px-8 lg:py-32"
+      className="relative isolate scroll-mt-24 px-6 py-12 md:scroll-mt-28 md:px-8 md:py-16 lg:py-20"
     >
       <FloralIllustration className="pointer-events-none absolute right-[-8rem] bottom-0 top-auto z-0 w-[15rem] rotate-6 text-[#5D4037] opacity-[0.045] mix-blend-multiply sm:right-[-9rem] sm:w-[19rem] md:right-[-7rem] md:bottom-auto md:top-1/3 md:w-[24rem] md:opacity-[0.12]" />
 
       <div className="relative z-10 mx-auto max-w-7xl">
-        <div className="mb-8 grid gap-5 border-y border-[#5D4037]/20 py-6 sm:mb-12 sm:gap-6 sm:py-8 md:grid-cols-[0.9fr_1fr] md:items-end">
+        <div className="mb-6 grid gap-5 border-y border-[#5D4037]/20 py-5 sm:mb-8 sm:gap-6 sm:py-6 md:grid-cols-[0.9fr_1fr] md:items-end">
           <div>
             <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.24em] text-[#5D4037] sm:text-xs sm:tracking-[0.28em]"></p>
             <h2 className="text-balance font-serif text-[2.75rem] font-medium leading-[0.95] tracking-[-0.04em] text-[#3E2723] sm:text-5xl md:text-7xl md:leading-none">
@@ -24,7 +24,7 @@ const Portfolio = ({ projects, ui }) => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
           {projects.map((project, index) => (
             <article
               key={project.title}
@@ -35,22 +35,37 @@ const Portfolio = ({ projects, ui }) => {
                 <span>{project.tags[0]}</span>
               </div>
 
-              <div className="relative aspect-video overflow-hidden border border-[#5D4037]/20 bg-[#EDE7DC]">
-                <LazyVideo
-                  src={project.video}
-                  className="h-full w-full object-cover opacity-90 mix-blend-multiply saturate-[0.82] transition duration-500 group-hover:scale-[1.025]"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  controls
-                />
-                <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-[#3E2723]/10 opacity-100 transition group-hover:opacity-0">
-                  <div className="rounded-full border border-[#F4F1EA]/70 bg-[#3E2723]/70 p-4 text-[#F4F1EA] shadow-[0_12px_30px_rgba(62,39,35,0.18)]">
-                    <Play size={28} fill="currentColor" strokeWidth={1.5} />
+              {project.video ? (
+                <div className="relative aspect-video overflow-hidden border border-[#5D4037]/20 bg-[#EDE7DC]">
+                  <LazyVideo
+                    src={project.video}
+                    className="h-full w-full object-cover opacity-90 mix-blend-multiply saturate-[0.82] transition duration-500 group-hover:scale-[1.025]"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    controls
+                  />
+                  <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-[#3E2723]/10 opacity-100 transition group-hover:opacity-0">
+                    <div className="rounded-full border border-[#F4F1EA]/70 bg-[#3E2723]/70 p-4 text-[#F4F1EA] shadow-[0_12px_30px_rgba(62,39,35,0.18)]">
+                      <Play size={28} fill="currentColor" strokeWidth={1.5} />
+                    </div>
                   </div>
                 </div>
-              </div>
+              ) : project.image ? (
+                <div className="relative aspect-video overflow-hidden border border-[#5D4037]/20 bg-[#EDE7DC]">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    loading="lazy"
+                    className="h-full w-full object-cover opacity-90 mix-blend-multiply saturate-[0.82] transition duration-500 group-hover:scale-[1.025]"
+                  />
+                </div>
+              ) : (
+                <div className="flex aspect-video items-center justify-center border border-[#5D4037]/20 bg-[#EDE7DC] p-6 text-center font-mono text-[10px] uppercase leading-5 tracking-[0.18em] text-[#5D4037]/75">
+                  DMD Compresores / Lanús, PBA
+                </div>
+              )}
 
               <div className="p-3 sm:p-4 md:p-6">
                 <div className="mb-4 flex flex-wrap gap-2 sm:mb-5">
