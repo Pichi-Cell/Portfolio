@@ -1,0 +1,71 @@
+---
+import { getCollection } from 'astro:content';
+import BlogLayout from '../../layouts/BlogLayout.astro';
+
+const { lang = 'en' } = Astro.props;
+const isSpanish = lang === 'es';
+const posts = (await getCollection('blog', ({ data }) => !data.draft && data.lang === lang))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const blogPath = isSpanish ? '/es/blog' : '/blog';
+---
+
+<BlogLayout
+  lang={lang}
+  title={isSpanish ? 'Blog' : 'Blog'}
+  description={isSpanish ? 'Notas sobre desarrollo full-stack, sistemas embebidos e integración con IA.' : 'Notes on full-stack development, embedded systems, and AI integration.'}
+>
+  <main class="relative isolate mx-auto max-w-7xl px-5 pb-20 pt-44 sm:px-8 sm:pt-48 md:pt-56">
+    <picture class="pointer-events-none absolute right-[-4rem] top-20 z-0 block w-[18rem] rotate-[-40deg] scale-x-[-1] opacity-[0.18] mix-blend-multiply sepia saturate-[0.78] contrast-[1.04] sm:right-[-5rem] sm:w-[24rem] md:-right-28 md:top-8 md:w-[32rem] lg:right-[-2rem] lg:w-[38rem]">
+      <source media="(min-width: 768px)" srcSet="/flower.webp" width="667" height="1019" />
+      <img
+        src="/flower-low.webp"
+        alt=""
+        aria-hidden="true"
+        width="320"
+        height="489"
+        sizes="(min-width: 1280px) 38rem, (min-width: 768px) 32rem, 24rem"
+        decoding="async"
+        fetchPriority="low"
+        class="h-auto w-full"
+      />
+    </picture>
+
+    <header class="relative z-10 max-w-4xl border-b border-[#5D4037]/20 pb-10 md:pb-14">
+      <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.26em] text-[#8D6E63]"></p>
+      <h1 class="mt-5 font-serif text-[clamp(4rem,12vw,10rem)] font-medium leading-[0.8] tracking-[-0.065em] text-[#3E2723]">Blog</h1>
+      <p class="mt-8 max-w-2xl pt-8 text-lg leading-8 text-[#5D4037] sm:text-xl">
+        {isSpanish ? 'Proyectos y pensamientos miscelaneos sin orden particular' : 'Random thoughts and projects with no particular order.'}
+      </p>
+    </header>
+
+    <section class="mt-10" aria-labelledby="latest-posts">
+      <div class="mb-5 flex items-center justify-between gap-4">
+        <h2 id="latest-posts" class="font-mono text-[11px] font-semibold uppercase tracking-[0.2em] text-[#5D4037]">{isSpanish ? 'Últimas notas' : 'Latest posts'}</h2>
+        <span class="font-mono text-[10px] uppercase tracking-[0.16em] text-[#8D6E63]"></span>
+      </div>
+
+      <div class="grid gap-5 md:grid-cols-2">
+        {posts.map((post) => (
+          <a
+            href={`${blogPath}/${post.data.slug}/`}
+            class="group flex min-h-[18rem] flex-col justify-between border border-[#5D4037]/15 bg-[#F4F1EA]/20 p-6 transition duration-300 hover:-translate-y-1 hover:border-[#3E2723]/35 hover:bg-[#F4F1EA]/40 sm:p-8"
+          >
+            <div>
+              <div class="flex items-center justify-between gap-4 font-mono text-[10px] uppercase tracking-[0.16em] text-[#8D6E63]">
+                <time datetime={post.data.pubDate.toISOString()}>{post.data.pubDate.toLocaleDateString(isSpanish ? 'es-AR' : 'en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</time>
+              </div>
+              <h3 class="mt-12 max-w-xl font-serif text-4xl leading-[0.95] tracking-[-0.04em] text-[#3E2723] sm:text-5xl">{post.data.title}</h3>
+              <p class="mt-5 max-w-lg leading-7 text-[#5D4037]">{post.data.description}</p>
+            </div>
+            <div class="mt-8 flex items-center justify-between gap-4">
+              <div class="flex flex-wrap gap-2">
+                {post.data.tags.map((tag) => <span class="rounded-full border border-[#5D4037]/15 px-2.5 py-1 font-mono text-[9px] uppercase tracking-[0.1em] text-[#5D4037]">{tag}</span>)}
+              </div>
+              <span aria-hidden="true" class="font-mono text-xl text-[#3E2723] transition-transform duration-300 group-hover:translate-x-1">↗</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  </main>
+</BlogLayout>

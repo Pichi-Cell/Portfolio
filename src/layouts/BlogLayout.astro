@@ -1,0 +1,53 @@
+---
+import ScrollNavbar from '../components/layout/ScrollNavbar';
+import content from '../data/content.json';
+
+const { lang = 'en', title = 'Blog', description = '', languageHref } = Astro.props;
+const ui = content[lang].ui;
+const homePath = lang === 'es' ? '/es/' : '/';
+const fallbackLanguageHref = lang === 'es' ? '/blog/' : '/es/blog/';
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#F4F1EA" />
+    <meta name="description" content={description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" />
+    <title>{title} | Lucas Picchi</title>
+  </head>
+  <body>
+    <ScrollNavbar ui={ui} lang={lang} basePath={homePath} languageHref={languageHref || fallbackLanguageHref} />
+    <slot />
+
+    <script is:inline>
+      (() => {
+        const menu = document.querySelector('[data-mobile-menu]');
+        const buttons = document.querySelectorAll('[data-mobile-menu-button]');
+        if (!menu || !buttons.length) return;
+
+        const setOpen = (open) => {
+          menu.hidden = !open;
+          menu.classList.toggle('hidden', !open);
+          document.body.classList.toggle('menu-open', open);
+          buttons.forEach((button) => {
+            button.setAttribute('aria-expanded', String(open));
+            button.textContent = open ? button.dataset.labelOpen : button.dataset.labelClosed;
+          });
+        };
+
+        buttons.forEach((button) => button.addEventListener('click', () => setOpen(menu.hidden)));
+        menu.querySelectorAll('[data-mobile-menu-link]').forEach((link) => {
+          link.addEventListener('click', () => setOpen(false));
+        });
+        document.addEventListener('keydown', (event) => {
+          if (event.key === 'Escape') setOpen(false);
+        });
+      })();
+    </script>
+  </body>
+</html>

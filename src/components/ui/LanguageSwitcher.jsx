@@ -1,8 +1,8 @@
 import React from 'react';
 
-const LanguageSwitcher = ({ lang = 'en' }) => {
+const LanguageSwitcher = ({ lang = 'en', switchHref }) => {
     const isSpanish = lang === 'es';
-    const href = isSpanish ? '/' : '/es/';
+    const href = switchHref || (isSpanish ? '/' : '/es/');
 
     return (
         <a

@@ -5,6 +5,8 @@ export default {
     './src/App.jsx',
     './src/context/**/*.{js,jsx,ts,tsx}',
     './src/components/layout/**/*.{js,jsx,ts,tsx}',
+    './src/components/blog/**/*.{astro,js,jsx,ts,tsx}',
+    './src/layouts/**/*.{astro,js,jsx,ts,tsx}',
     './src/components/ui/{FloralIllustration,LanguageSwitcher,LazyVideo}.{js,jsx,ts,tsx}',
     './src/sections/{Contact,Experience,Hero,Portfolio,SkillsMatrix}.{js,jsx,ts,tsx}',
   ],

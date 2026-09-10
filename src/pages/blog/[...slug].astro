@@ -1,0 +1,21 @@
+---
+import { getCollection } from 'astro:content';
+import '../../index.css';
+import BlogPost from '../../components/blog/BlogPost.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => !data.draft && data.lang === 'en');
+  const translations = await getCollection('blog', ({ data }) => !data.draft && data.lang === 'es');
+  return posts.map((post) => ({
+    params: { slug: post.data.slug },
+    props: {
+      post,
+      translationSlug: translations.find((translation) => translation.data.translationKey === post.data.translationKey)?.data.slug,
+    },
+  }));
+}
+
+const { post, translationSlug } = Astro.props;
+---
+
+<BlogPost post={post} translationSlug={translationSlug} />

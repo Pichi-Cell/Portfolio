@@ -1,0 +1,47 @@
+---
+import { render } from 'astro:content';
+import BlogLayout from '../../layouts/BlogLayout.astro';
+
+const { post, lang = 'en', translationSlug } = Astro.props;
+const isSpanish = lang === 'es';
+const blogPath = isSpanish ? '/es/blog/' : '/blog/';
+const translationPath = translationSlug
+  ? `${isSpanish ? '/blog' : '/es/blog'}/${translationSlug}/`
+  : null;
+const { Content } = await render(post);
+---
+
+<BlogLayout lang={lang} title={post.data.title} description={post.data.description} languageHref={translationPath}>
+  <main class="mx-auto max-w-4xl px-5 pb-24 pt-44 sm:px-8 sm:pt-48 md:pt-56">
+    <a href={blogPath} class="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-[#8D6E63] transition hover:text-[#3E2723]">{isSpanish ? '← Volver al blog' : '← Back to blog'}</a>
+
+    <header class="mt-12 border-b border-[#5D4037]/20 pb-10 md:mt-16 md:pb-14">
+      <div class="flex flex-wrap items-center gap-x-4 gap-y-2 font-mono text-[10px] uppercase tracking-[0.16em] text-[#8D6E63]">
+        <time datetime={post.data.pubDate.toISOString()}>{post.data.pubDate.toLocaleDateString(isSpanish ? 'es-AR' : 'en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+        <span aria-hidden="true">/</span>
+        <span>{post.data.tags.join(' · ')}</span>
+        {translationPath && <a href={translationPath} class="transition hover:text-[#3E2723]">{isSpanish ? 'Read in English →' : 'Leer en español →'}</a>}
+      </div>
+      <h1 class="mt-6 max-w-4xl font-serif text-[clamp(3.5rem,9vw,7.5rem)] font-medium leading-[0.84] tracking-[-0.06em] text-[#3E2723]">{post.data.title}</h1>
+      <p class="mt-8 max-w-2xl text-xl leading-8 text-[#5D4037]">{post.data.description}</p>
+    </header>
+
+    <article class="blog-prose pt-10 md:pt-14">
+      <Content />
+    </article>
+  </main>
+</BlogLayout>
+
+<style>
+  .blog-prose :global(p) { margin-top: 1.5rem; max-width: 42rem; color: #5d4037; font-size: 1.125rem; line-height: 2; }
+  .blog-prose :global(h2) { margin-top: 3.5rem; color: #3e2723; font-family: 'EB Garamond', Georgia, serif; font-size: 2.75rem; line-height: 0.95; letter-spacing: -0.04em; }
+  .blog-prose :global(pre) { margin-top: 2rem; overflow-x: auto; border: 1px solid rgba(93, 64, 55, 0.14); border-radius: 1rem; background: rgba(62, 39, 35, 0.94); padding: 1.25rem; color: #f4f1ea; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; line-height: 1.8; }
+  .blog-prose :global(code) { font-family: 'JetBrains Mono', monospace; font-size: 0.88em; }
+  .blog-prose :global(p code) { border-radius: 0.3rem; background: rgba(93, 64, 55, 0.1); padding: 0.15rem 0.35rem; }
+  .blog-prose :global(strong) { color: #3e2723; font-weight: 700; }
+  .blog-prose :global(a) { text-decoration: underline; text-decoration-color: rgba(93, 64, 55, 0.35); text-underline-offset: 0.2em; }
+  @media (max-width: 640px) {
+    .blog-prose :global(p) { font-size: 1rem; line-height: 1.9; }
+    .blog-prose :global(h2) { font-size: 2.25rem; }
+  }
+</style>

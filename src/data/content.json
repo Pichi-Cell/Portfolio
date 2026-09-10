@@ -191,6 +191,7 @@
         "skills": "Skills",
         "experience": "Experience",
         "contact": "Contact",
+        "blog": "Blog",
         "education": "Education"
       },
       "hero": {
@@ -422,6 +423,7 @@
         "skills": "Habilidades",
         "experience": "Experiencia",
         "contact": "Contacto",
+        "blog": "Blog",
         "education": "Educación"
       },
       "hero": {

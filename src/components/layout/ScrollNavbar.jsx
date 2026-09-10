@@ -1,12 +1,13 @@
 import React from 'react';
 import LanguageSwitcher from '../ui/LanguageSwitcher';
 
-const ScrollNavbar = ({ ui, lang = 'en' }) => {
+const ScrollNavbar = ({ ui, lang = 'en', basePath = '', languageHref }) => {
     const navLinks = [
-        { name: ui.nav.portfolio, href: '#portfolio' },
-        { name: ui.nav.skills, href: '#skills' },
-        { name: ui.nav.experience, href: '#experience' },
-        { name: ui.nav.contact, href: '#contact' },
+        { name: ui.nav.portfolio, href: `${basePath}#portfolio` },
+        { name: ui.nav.skills, href: `${basePath}#skills` },
+        { name: ui.nav.experience, href: `${basePath}#experience` },
+        { name: ui.nav.contact, href: `${basePath}#contact` },
+        { name: ui.nav.blog, href: lang === 'es' ? '/es/blog/' : '/blog/' },
     ];
     const labels = lang === 'es'
         ? { closed: 'Menú', open: 'Cerrar' }
@@ -29,11 +30,11 @@ const ScrollNavbar = ({ ui, lang = 'en' }) => {
                             {link.name}
                         </a>
                     ))}
-                    <LanguageSwitcher lang={lang} />
+                    <LanguageSwitcher lang={lang} switchHref={languageHref} />
                 </div>
 
                 <div className="flex items-center gap-2 md:hidden">
-                    <LanguageSwitcher lang={lang} />
+                    <LanguageSwitcher lang={lang} switchHref={languageHref} />
                     <button
                         type="button"
                         data-mobile-menu-button
