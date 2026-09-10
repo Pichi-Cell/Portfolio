@@ -3,11 +3,12 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { Float, useGLTF, Environment, useProgress } from '@react-three/drei';
 import { EffectComposer, Pixelation } from '@react-three/postprocessing';
 import * as THREE from 'three';
+import modelUrl from './niknet_art-crt-2749.glb?url';
 
 const Model = () => {
     const groupRef = useRef();
-    const { scene } = useGLTF('/models/niknet_art-crt-2749.glb');
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+    const { scene } = useGLTF(modelUrl);
+    const [isMobile, setIsMobile] = useState(() => (typeof window !== 'undefined' ? window.innerWidth < 768 : false));
 
     useEffect(() => {
         const handleResize = () => setIsMobile(window.innerWidth < 768);

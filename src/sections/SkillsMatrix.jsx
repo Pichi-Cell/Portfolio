@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import FloralIllustration from "../components/ui/FloralIllustration";
 
 const SkillsMatrix = ({ skills, ui }) => {
@@ -27,12 +26,8 @@ const SkillsMatrix = ({ skills, ui }) => {
 
         <div className="grid grid-cols-1 border-l border-t border-[#5D4037]/20 sm:grid-cols-2 xl:grid-cols-3">
           {entries.map(([domain, items], index) => (
-            <motion.article
+            <article
               key={domain}
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.45, delay: index * 0.04 }}
               className="min-h-0 border-b border-r border-[#5D4037]/20 bg-[#F9F8F6]/35 p-5 transition-colors hover:bg-[#F9F8F6]/70 sm:p-6 lg:min-h-80"
             >
               <div className="mb-5 flex items-start justify-between gap-4 sm:mb-8">
@@ -57,7 +52,7 @@ const SkillsMatrix = ({ skills, ui }) => {
                   </li>
                 ))}
               </ol>
-            </motion.article>
+            </article>
           ))}
         </div>
       </div>

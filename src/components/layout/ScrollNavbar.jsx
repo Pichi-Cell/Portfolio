@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import LanguageSwitcher from '../ui/LanguageSwitcher';
 
 const ScrollNavbar = ({ ui }) => {
@@ -19,12 +18,7 @@ const ScrollNavbar = ({ ui }) => {
 
     return (
         <header className="fixed left-0 right-0 top-0 z-50">
-            <motion.nav
-                initial={{ opacity: 0, y: -16 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.45, ease: 'easeOut' }}
-                className="relative z-20 flex min-h-[64px] w-full items-center justify-between border-b border-[#5D4037]/10 bg-[#d2bea2]/60 px-4 py-2.5 backdrop-blur-[2px] sm:px-6 md:min-h-[72px] md:px-8 md:py-4"
-            >
+            <nav className="relative z-20 flex min-h-[64px] w-full items-center justify-between border-b border-[#5D4037]/10 bg-[#d2bea2]/60 px-4 py-2.5 backdrop-blur-[2px] sm:px-6 md:min-h-[72px] md:px-8 md:py-4">
                 <a href="#" className="font-serif text-2xl font-semibold tracking-[-0.04em] text-[#3E2723]/80 transition hover:text-[#3E2723] md:text-[1.7rem]">
                     Lucas
                 </a>
@@ -55,19 +49,14 @@ const ScrollNavbar = ({ ui }) => {
                         {isMobileMenuOpen ? 'Close' : 'Menu'}
                     </button>
                 </div>
-            </motion.nav>
+            </nav>
 
-            <AnimatePresence>
-                {isMobileMenuOpen && (
-                    <motion.div
-                        id="mobile-navigation"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: 0.28, ease: 'easeOut' }}
-                        className="fixed inset-0 z-10 flex flex-col justify-between overflow-y-auto bg-[#d2bea2] px-6 pb-8 pt-24 md:hidden"
-                    >
-                        <div className="pointer-events-none absolute inset-0 opacity-70 [background:radial-gradient(circle_at_20%_10%,rgba(249,248,246,0.45),transparent_18rem),radial-gradient(circle_at_90%_80%,rgba(93,64,55,0.10),transparent_20rem)]" />
+            {isMobileMenuOpen && (
+                <div
+                    id="mobile-navigation"
+                    className="fixed inset-0 z-10 flex flex-col justify-between overflow-y-auto bg-[#d2bea2] px-6 pb-8 pt-24 md:hidden"
+                >
+                    <div className="pointer-events-none absolute inset-0 opacity-70 [background:radial-gradient(circle_at_20%_10%,rgba(249,248,246,0.45),transparent_18rem),radial-gradient(circle_at_90%_80%,rgba(93,64,55,0.10),transparent_20rem)]" />
 
                         <nav className="relative z-10 border-y border-[#5D4037]/20 py-4" aria-label="Mobile navigation">
                             {navLinks.map((link, index) => (
@@ -88,9 +77,8 @@ const ScrollNavbar = ({ ui }) => {
                         <p className="relative z-10 max-w-xs border-l border-[#5D4037]/25 pl-4 font-mono text-[10px] uppercase leading-5 tracking-[0.18em] text-[#5D4037]/75">
                             Archival index / Lucas Picchi / mobile edition
                         </p>
-                    </motion.div>
-                )}
-            </AnimatePresence>
+                </div>
+            )}
         </header>
     );
 };

@@ -1,7 +1,7 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { ExternalLink, Github, Play } from "lucide-react";
 import FloralIllustration from "../components/ui/FloralIllustration";
+import LazyVideo from "../components/ui/LazyVideo";
 
 const Portfolio = ({ projects, ui }) => {
   return (
@@ -26,12 +26,8 @@ const Portfolio = ({ projects, ui }) => {
 
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           {projects.map((project, index) => (
-            <motion.article
+            <article
               key={project.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.5, delay: index * 0.08 }}
               className="group relative border border-[#5D4037]/25 bg-[#F9F8F6]/50 p-3 shadow-[0_24px_90px_rgba(62,39,35,0.07)] transition hover:-translate-y-1 hover:bg-[#F9F8F6]/80 sm:p-4"
             >
               <div className="mb-3 flex items-center justify-between gap-3 border-b border-[#5D4037]/20 pb-3 font-mono text-[9px] uppercase tracking-[0.18em] text-[#8D6E63] sm:mb-4 sm:text-[10px] sm:tracking-[0.22em]">
@@ -40,14 +36,14 @@ const Portfolio = ({ projects, ui }) => {
               </div>
 
               <div className="relative aspect-video overflow-hidden border border-[#5D4037]/20 bg-[#EDE7DC]">
-                <video
+                <LazyVideo
                   src={project.video}
                   className="h-full w-full object-cover opacity-90 mix-blend-multiply saturate-[0.82] transition duration-500 group-hover:scale-[1.025]"
+                  autoPlay
                   muted
                   loop
                   playsInline
                   controls
-                  preload="metadata"
                 />
                 <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-[#3E2723]/10 opacity-100 transition group-hover:opacity-0">
                   <div className="rounded-full border border-[#F4F1EA]/70 bg-[#3E2723]/70 p-4 text-[#F4F1EA] shadow-[0_12px_30px_rgba(62,39,35,0.18)]">
@@ -102,7 +98,7 @@ const Portfolio = ({ projects, ui }) => {
                   </div>
                 )}
               </div>
-            </motion.article>
+            </article>
           ))}
         </div>
       </div>

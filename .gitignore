@@ -12,6 +12,24 @@ dist
 dist-ssr
 *.local
 
+# Env/secrets
+.env
+.env.*
+!.env.example
+
+# Package-manager caches
+.pnpm-store
+.yarn
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# Deployment/tooling
+.vercel
+.netlify
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -23,5 +41,6 @@ dist-ssr
 *.sln
 *.sw?
 
-# Vite specific
+# Generated
+.astro
 .vite

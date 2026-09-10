@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 
 const Experience = ({ experience, ui }) => {
   return (
@@ -21,12 +20,8 @@ const Experience = ({ experience, ui }) => {
 
         <div className="relative ml-1 border-l border-[#5D4037]/20 lg:ml-0 lg:border-l-0 lg:border-y lg:border-[#5D4037]/25">
           {experience.map((exp, index) => (
-            <motion.article
+            <article
               key={`${exp.company}-${exp.period}`}
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-70px" }}
-              transition={{ duration: 0.48, delay: index * 0.04 }}
               className="relative grid gap-5 border-b border-[#5D4037]/20 py-8 pl-7 last:border-b-0 sm:gap-6 sm:py-9 lg:grid-cols-[15rem_1fr] lg:pl-0"
             >
               <div className="flex items-start gap-4 lg:block">
@@ -59,7 +54,7 @@ const Experience = ({ experience, ui }) => {
                   ))}
                 </ul>
               </div>
-            </motion.article>
+            </article>
           ))}
         </div>
       </div>

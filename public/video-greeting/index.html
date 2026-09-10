@@ -29,7 +29,9 @@
 
   <body class="bg-slate-950 text-slate-50 selection:bg-emerald-500/30">
     <div id="root">
-      <video src="/video.mp4" controls></video>
+      <video autoplay muted playsinline controls preload="metadata">
+        <source src="/video.webm" type="video/webm" />
+      </video>
     </div>
   </body>
 </html>

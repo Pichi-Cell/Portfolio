@@ -33,7 +33,6 @@ const Contact = ({ email, ui }) => {
 
         <div className="mt-10 flex flex-col justify-between gap-3 border-t border-[#5D4037]/20 pt-5 font-mono text-[10px] uppercase leading-5 tracking-[0.18em] text-[#8D6E63] sm:mt-16 sm:flex-row sm:gap-4 sm:pt-6 sm:tracking-[0.2em]">
           <span>Lucas Picchi</span>
-          <span>{email}</span>
         </div>
       </div>
     </footer>

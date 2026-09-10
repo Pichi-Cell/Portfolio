@@ -1,25 +1,13 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { Download } from "lucide-react";
 
 const Hero = ({ data, resumeUrl, ui }) => {
   return (
     <section className="relative isolate min-h-[92svh] overflow-hidden px-5 pb-12 pt-24 sm:px-6 sm:pb-16 sm:pt-28 md:min-h-screen md:overflow-visible md:px-8 md:pb-24 md:pt-32 lg:pt-40">
-      <img
-        src="/flower.png"
-        alt=""
-        aria-hidden="true"
-        className="pointer-events-none absolute -right-24 bottom-2 top-auto z-0 hidden w-[18rem] rotate-[-40deg] scale-x-[-1] opacity-[0.14] mix-blend-multiply sepia saturate-[0.78] contrast-[1.04] sm:-right-28 sm:w-[24rem] sm:opacity-[0.14] md:bottom-auto md:right-4 md:top-1 md:block md:w-[32rem] md:opacity-[0.18] xl:right-24 xl:w-[38rem]"
-      />
       <div className="absolute left-0 top-0 z-0 h-64 w-64 rounded-full bg-[#8D6E63]/10 blur-3xl" />
 
       <div className="relative z-10 mx-auto max-w-7xl">
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.75, ease: "easeOut" }}
-          className="min-w-0 max-w-full"
-        >
+        <div className="min-w-0 max-w-full">
           <p className="mb-5 max-w-full break-words font-mono text-[10px] uppercase leading-5 tracking-[0.2em] text-[#5D4037] sm:max-w-none sm:break-normal sm:text-xs sm:tracking-[0.34em]">
             <span>{data.title}</span>
             <span className="mx-2 opacity-60">|</span>
@@ -36,12 +24,10 @@ const Hero = ({ data, resumeUrl, ui }) => {
               {data.title}
             </p>
             <p className="mt-4 flow-root max-w-2xl text-[15px] leading-7 text-[#5D4037] sm:text-base sm:leading-8 md:block md:text-lg">
-              <img
-                src="/flower.png"
-                alt=""
-                aria-hidden="true"
-                className="pointer-events-none float-right -mr-10 ml-3 mt-5 block w-[9.5rem] rotate-[-40deg] scale-x-[-1] opacity-[0.18] mix-blend-multiply sepia saturate-[0.78] contrast-[1.04] [shape-margin:0.75rem] [shape-outside:url('/flower.png')] min-[380px]:-mr-12 min-[380px]:w-[10.75rem] sm:-mr-14 sm:ml-5 sm:mt-6 sm:w-[13rem] md:hidden"
-              />
+              <picture className="pointer-events-none float-right -mr-10 ml-3 mt-5 block w-[9.5rem] rotate-[-40deg] scale-x-[-1] opacity-[0.18] mix-blend-multiply sepia saturate-[0.78] contrast-[1.04] [shape-margin:0.75rem] max-md:[shape-outside:url('/flower-low.webp')] min-[380px]:-mr-12 min-[380px]:w-[10.75rem] sm:-mr-14 sm:ml-5 sm:mt-6 sm:w-[13rem] md:absolute md:-right-28 md:bottom-auto md:-top-28 md:z-[-1] lg:-top-36 md:m-0 md:w-[32rem] md:float-none md:opacity-[0.18] xl:right-0 xl:w-[38rem]">
+                <source media="(min-width: 768px)" srcSet="/flower.webp" />
+                <img src="/flower-low.webp" alt="" aria-hidden="true" className="h-auto w-full" />
+              </picture>
               {data.bio}
             </p>
           </div>
@@ -67,7 +53,7 @@ const Hero = ({ data, resumeUrl, ui }) => {
               ))}
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

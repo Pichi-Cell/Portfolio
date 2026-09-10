@@ -79,7 +79,7 @@
       {
         "title": "Vision Electronic Indexing",
         "description": "Model Context Protocol (MCP) server that bridges local image processing with Vision Models to automate hardware inventory and extract IC markings from PCB photos using agent-assisted workflows.",
-        "video": "/video_vision.mp4",
+        "video": "/video_vision.webm",
         "tags": ["Python", "MCP", "Cloudflare Workers AI", "LLMs"],
         "links": {
           "github": "https://github.com/Pichi-Cell/vision-electronic-indexing",
@@ -89,7 +89,7 @@
       {
         "title": "Industrial Telemetry Platform",
         "description": "Real-time monitoring system for industrial compressors, featuring high-frequency data ingestion and live performance visualization.",
-        "video": "/telemetry_video.mkv",
+        "video": "/telemetry_video.webm",
         "tags": ["Node.js", "Redis", "PostgreSQL", "Docker"],
         "links": {}
       }
@@ -263,7 +263,7 @@
       {
         "title": "Vision Electronic Indexing",
         "description": "Servidor Model Context Protocol (MCP) que conecta el procesamiento local de imágenes con modelos de visión para automatizar el inventario de hardware y extraer marcas de circuitos integrados desde fotos de PCB mediante flujos de trabajo asistidos por agentes.",
-        "video": "/video_vision.mp4",
+        "video": "/video_vision.webm",
         "tags": ["Python", "MCP", "Cloudflare Workers AI", "LLMs"],
         "links": {
           "github": "https://github.com/Pichi-Cell/vision-electronic-indexing",
@@ -273,7 +273,7 @@
       {
         "title": "Plataforma de Telemetría Industrial",
         "description": "Sistema de monitoreo en tiempo real para compresores industriales, con ingesta de datos a alta frecuencia y visualización de rendimiento en vivo.",
-        "video": "/telemetry_video.mkv",
+        "video": "/telemetry_video.webm",
         "tags": ["Node.js", "Redis", "PostgreSQL", "Docker"],
         "links": {}
       }

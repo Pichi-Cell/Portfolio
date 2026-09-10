@@ -5,13 +5,16 @@ const LanguageContext = createContext();
 const STORAGE_KEY = 'portfolio-lang';
 
 export const LanguageProvider = ({ children }) => {
-    const [lang, setLang] = useState(() => {
+    const [lang, setLang] = useState('en');
+
+    useEffect(() => {
         try {
-            return localStorage.getItem(STORAGE_KEY) || 'en';
-        } catch {
-            return 'en';
-        }
-    });
+            const storedLang = localStorage.getItem(STORAGE_KEY);
+            if (storedLang === 'en' || storedLang === 'es') {
+                setLang(storedLang);
+            }
+        } catch { /* ignore */ }
+    }, []);
 
     useEffect(() => {
         try {
